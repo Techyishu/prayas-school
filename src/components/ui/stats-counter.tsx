@@ -84,9 +84,10 @@ export function StatsCounter({
 interface FloatingStatsProps {
     children: React.ReactNode
     className?: string
+    offset?: number
 }
 
-export function FloatingStats({ children, className }: FloatingStatsProps) {
+export function FloatingStats({ children, className, offset = 10 }: FloatingStatsProps) {
     const [scrollY, setScrollY] = useState(0)
 
     useEffect(() => {
@@ -101,7 +102,7 @@ export function FloatingStats({ children, className }: FloatingStatsProps) {
     return (
         <motion.div
             style={{
-                transform: `translateY(${scrollY * 0.1}px)`,
+                transform: `translateY(${scrollY * (offset / 100)}px)`,
             }}
             className={className}
         >

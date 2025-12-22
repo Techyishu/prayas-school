@@ -88,11 +88,12 @@ export function Stats() {
                             transition={{ delay: index * 0.1 }}
                             className="text-center"
                         >
-                            <div className="text-4xl md:text-5xl font-bold text-white mb-2">
-                                <StatsCounter end={stat.value} suffix={stat.suffix} />
-                            </div>
-                            <div className="text-lg font-semibold text-blue-100 mb-1">
-                                {stat.label}
+                            <div className="mb-2">
+                                <StatsCounter
+                                    value={stat.value}
+                                    suffix={stat.suffix}
+                                    label={stat.label}
+                                />
                             </div>
                             <div className="text-sm text-blue-200/60">
                                 {stat.description}
