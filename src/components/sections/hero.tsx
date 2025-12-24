@@ -15,7 +15,7 @@ export function Hero() {
     const opacity = useTransform(scrollY, [0, 300], [1, 0])
 
     const handleWhatsApp = () => {
-        window.open("https://wa.me/917870478704?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
+        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
     }
 
     return (

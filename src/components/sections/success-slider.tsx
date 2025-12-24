@@ -306,7 +306,7 @@ function SuccessCard({
                         className="mt-8 btn-gold rounded-xl py-6"
                         onClick={(e) => {
                             e.stopPropagation()
-                            window.open("https://wa.me/917870478704", "_blank")
+                            window.open("https://wa.me/919653505005", "_blank")
                         }}
                     >
                         Your Story Next?
@@ -515,7 +515,7 @@ export function SuccessSlider() {
                     <Button
                         size="lg"
                         className="btn-gold rounded-2xl px-10 py-7 text-lg group"
-                        onClick={() => window.open("https://wa.me/917870478704", "_blank")}
+                        onClick={() => window.open("https://wa.me/919653505005", "_blank")}
                     >
                         Start Your Journey
                         <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-2" />

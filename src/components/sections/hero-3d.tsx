@@ -253,7 +253,7 @@ export function Hero3D() {
     }, [])
 
     const handleWhatsApp = () => {
-        window.open("https://wa.me/917870478704?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
+        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
     }
 
     return (

@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Phone, Globe, ChevronDown } from "lucide-react"
@@ -27,13 +28,15 @@ export function Navbar() {
     const navLinks = [
         { href: "/", label: t("home") },
         { href: "/services", label: t("services") },
+        { href: "/visa", label: t("visa") },
+        { href: "/gallery", label: t("gallery") },
         { href: "/about", label: t("about") },
         { href: "/blog", label: t("blog") },
         { href: "/contact", label: t("contact") },
     ]
 
     const handleWhatsApp = () => {
-        window.open("https://wa.me/917870478704?text=Hi, I'd like to book a free consultation", "_blank")
+        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation", "_blank")
     }
 
     return (
@@ -60,12 +63,16 @@ export function Navbar() {
                         {/* Logo */}
                         <Link
                             href="/"
-                            className={cn(
-                                "font-bold text-2xl tracking-tight transition-colors",
-                                isScrolled ? "text-navy-900" : "text-white"
-                            )}
+                            className="flex items-center"
                         >
-                            Seabird<span className="text-teal-500">.</span>
+                            <Image
+                                src="/BeautyPlusCam_20250703081107381_save-removebg-preview.png"
+                                alt="Seabird Education Logo"
+                                width={150}
+                                height={60}
+                                className="h-12 w-auto object-contain"
+                                priority
+                            />
                         </Link>
 
                         {/* Desktop Navigation */}
@@ -123,7 +130,7 @@ export function Navbar() {
                                 )}
                             >
                                 <Phone className="mr-2 h-4 w-4" />
-                                078704 78704
+                                096535 05005
                             </Button>
                         </div>
 
@@ -185,7 +192,7 @@ export function Navbar() {
                                         className="w-full btn-gold rounded-xl py-6"
                                     >
                                         <Phone className="mr-2 h-5 w-5" />
-                                        Call 078704 78704
+                                        Call 096535 05005
                                     </Button>
                                 </motion.div>
                             </div>

@@ -296,7 +296,7 @@ export function ServicesSection() {
                         <Button
                             size="lg"
                             className="btn-glass-ripple rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-6 text-base font-semibold shadow-lg shadow-cyan-500/25"
-                            onClick={() => window.open("https://wa.me/917870478704", "_blank")}
+                            onClick={() => window.open("https://wa.me/919653505005", "_blank")}
                         >
                             <Phone className="w-5 h-5 mr-2" />
                             Free Assessment

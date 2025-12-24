@@ -28,7 +28,7 @@ const testimonials = [
         name: "Sukhchain Singh",
         country: "UK Study Visa",
         flag: "🇬🇧",
-        quote: "Seabird Education is the best UK education consultant in Mohali. I got my cousin's visa within 22 days. Specially thanks to Iqbal sir for the quick processing and guidance throughout.",
+        quote: "Seabird Education is the best UK education consultant. I got my cousin's visa within 22 days. Specially thanks to Iqbal sir for the quick processing and guidance throughout.",
         rating: 5,
         avatar: "SS",
     },

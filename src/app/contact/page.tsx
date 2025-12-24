@@ -9,20 +9,20 @@ import { Button } from "@/components/ui/button"
 const contactInfo = [
     {
         icon: MapPin,
-        title: "Head Office - Mohali",
-        lines: ["SCF- 75 & 76, Phase 10", "Near Sarao Hotels", "SAS Nagar, Punjab 160062"],
+        title: "Head Office - Karnal",
+        lines: ["Mugal Canal Rd, near Ladla Bakery Chowk", "Old Char Chaman, Dyal Singh Colony", "Karnal, Haryana 132001"],
         gradient: "from-teal-500 to-emerald-600",
     },
     {
         icon: Phone,
         title: "Phone",
-        lines: ["078704 78704 (Front Desk)", "Toll Free Consultation"],
+        lines: ["096535 05005 (Front Desk)", "Toll Free Consultation"],
         gradient: "from-blue-500 to-indigo-600",
     },
     {
         icon: Mail,
         title: "Email",
-        lines: ["info@seabirdeducation.com"],
+        lines: ["inderdeolseabird@gmail.com"],
         gradient: "from-purple-500 to-pink-600",
     },
     {
@@ -35,34 +35,10 @@ const contactInfo = [
 
 const offices = [
     {
-        city: "Mohali (Head Office)",
-        address: "SCF- 75 & 76, Phase 10, near Sarao Hotels, Punjab 160062",
-        phone: "078704 78704",
-        email: "info@seabirdeducation.com"
-    },
-    {
-        city: "Gurdaspur",
-        address: "Sco No. 31 First floor, Puda market, J R complex, Jail Rd, Punjab 143521",
-        phone: "7508131000",
-        email: "seabirdgurdaspur80@gmail.com"
-    },
-    {
-        city: "Bathinda",
-        address: "Ajit Road, In front of gali no.15, XOX Complex Bathinda",
-        phone: "9815485400",
-        email: "bathindaseabird@gmail.com"
-    },
-    {
-        city: "Kot Kapura",
-        address: "Main chowk, Near Boys Government School Kotkapura",
-        phone: "9815890500",
-        email: "seabirdkotkapura204@gmail.com"
-    },
-    {
-        city: "Khamanon",
-        address: "Grain Market Khamanon",
-        phone: "9815225600",
-        email: "seabirdkhamanon386@gmail.com"
+        city: "Karnal (Head Office)",
+        address: "Mugal Canal Rd, near Ladla Bakery Chowk, Old Char Chaman, Dyal Singh Colony, Karnal, Haryana 132001",
+        phone: "096535 05005",
+        email: "inderdeolseabird@gmail.com"
     },
 ]
 
@@ -87,7 +63,7 @@ const faqs = [
 
 export default function ContactPage() {
     const handleWhatsApp = () => {
-        window.open("https://wa.me/917870478704?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
+        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
     }
 
     return (
@@ -161,9 +137,9 @@ export default function ContactPage() {
                             className="btn-gold text-lg px-8 py-6 rounded-xl w-full sm:w-auto"
                         >
                             <MessageCircle className="mr-2 h-5 w-5" />
-                            WhatsApp: 078704 78704
+                            WhatsApp: 096535 05005
                         </Button>
-                        <a href="tel:+917870478704">
+                        <a href="tel:+919653505005">
                             <Button
                                 variant="outline"
                                 className="text-lg px-8 py-6 rounded-xl border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white w-full sm:w-auto"
@@ -233,12 +209,13 @@ export default function ContactPage() {
                                 <GlassCard className="overflow-hidden">
                                     <div className="relative h-64">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.1!2d76.7!3d30.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQ0JzI0LjAiTiA3NsKwNDInMDAuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                            src="https://www.google.com/maps?q=Mugal+Canal+Rd,+near+Ladla+Bakery+Chowk,+Old+Char+Chaman,+Dyal+Singh+Colony,+Karnal,+Haryana+132001&output=embed"
                                             width="100%"
                                             height="100%"
                                             style={{ border: 0 }}
                                             allowFullScreen
                                             loading="lazy"
+                                            referrerPolicy="no-referrer-when-downgrade"
                                             className="absolute inset-0"
                                         />
                                     </div>
@@ -259,11 +236,11 @@ export default function ContactPage() {
                         className="text-center mb-16"
                     >
                         <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-600 text-sm font-semibold uppercase tracking-wide mb-4">
-                            Visit Any Branch
+                            Visit Us
                         </span>
-                        <h2 className="heading-lg text-navy-900">Our Offices Across Punjab</h2>
+                        <h2 className="heading-lg text-navy-900">Our Office</h2>
                         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                            Free consultation available at all our branches. Walk in during office hours
+                            Free consultation available. Walk in during office hours
                             or book an appointment for a dedicated session.
                         </p>
                     </motion.div>
@@ -324,10 +301,10 @@ export default function ContactPage() {
                             Response within 2 hours guaranteed!
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <a href="tel:+917870478704">
+                            <a href="tel:+919653505005">
                                 <Button className="btn-gold text-lg px-8 py-6 rounded-xl w-full sm:w-auto">
                                     <Phone className="mr-2 h-5 w-5" />
-                                    Call 078704 78704
+                                    Call 096535 05005
                                 </Button>
                             </a>
                             <Button

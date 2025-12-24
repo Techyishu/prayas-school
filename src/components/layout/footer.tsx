@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { Facebook, Instagram, Linkedin, Youtube, MapPin, Phone, Mail, ArrowRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
@@ -11,7 +12,7 @@ export function Footer() {
     const currentYear = new Date().getFullYear()
 
     const handleWhatsApp = () => {
-        window.open("https://wa.me/917870478704?text=Hi, I'd like to know more about your services", "_blank")
+        window.open("https://wa.me/919653505005?text=Hi, I'd like to know more about your services", "_blank")
     }
 
     const footerLinks = {
@@ -39,11 +40,7 @@ export function Footer() {
     }
 
     const offices = [
-        { city: "Mohali (Head Office)", phone: "078704 78704" },
-        { city: "Gurdaspur", phone: "7508131000" },
-        { city: "Bathinda", phone: "9815485400" },
-        { city: "Kot Kapura", phone: "9815890500" },
-        { city: "Khamanon", phone: "9815225600" },
+        { city: "Karnal (Head Office)", phone: "096535 05005" },
     ]
 
     const socialLinks = [
@@ -91,8 +88,14 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
                     {/* Brand Column */}
                     <div className="lg:col-span-2 space-y-6">
-                        <Link href="/" className="inline-block font-bold text-3xl tracking-tight">
-                            Seabird<span className="text-teal-500">.</span>
+                        <Link href="/" className="inline-block">
+                            <Image
+                                src="/BeautyPlusCam_20250703081107381_save-removebg-preview.png"
+                                alt="Seabird Education Logo"
+                                width={180}
+                                height={72}
+                                className="h-14 w-auto object-contain"
+                            />
                         </Link>
                         <p className="text-blue-200/70 max-w-sm leading-relaxed">
                             Since 2007, Seabird has been a leading force in international education,
@@ -101,23 +104,23 @@ export function Footer() {
 
                         {/* Contact Info */}
                         <div className="space-y-4 pt-4">
-                            <a href="tel:+917870478704" className="flex items-center gap-3 text-blue-200/80 hover:text-teal-400 transition-colors">
+                            <a href="tel:+919653505005" className="flex items-center gap-3 text-blue-200/80 hover:text-teal-400 transition-colors">
                                 <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
                                     <Phone className="h-4 w-4" />
                                 </div>
-                                <span>078704 78704</span>
+                                <span>096535 05005</span>
                             </a>
-                            <a href="mailto:info@seabirdeducation.com" className="flex items-center gap-3 text-blue-200/80 hover:text-teal-400 transition-colors">
+                            <a href="mailto:inderdeolseabird@gmail.com" className="flex items-center gap-3 text-blue-200/80 hover:text-teal-400 transition-colors">
                                 <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
                                     <Mail className="h-4 w-4" />
                                 </div>
-                                <span>info@seabirdeducation.com</span>
+                                <span>inderdeolseabird@gmail.com</span>
                             </a>
                             <div className="flex items-start gap-3 text-blue-200/80">
                                 <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
                                     <MapPin className="h-4 w-4" />
                                 </div>
-                                <span>SCF- 75 & 76, Phase 10, near Sarao Hotels, Mohali, Punjab 160062</span>
+                                <span>Mugal Canal Rd, near Ladla Bakery Chowk, Old Char Chaman, Dyal Singh Colony, Karnal, Haryana 132001</span>
                             </div>
                         </div>
 
@@ -195,7 +198,7 @@ export function Footer() {
 
                 {/* Offices */}
                 <div className="mt-16 pt-8 border-t border-white/10">
-                    <h4 className="font-semibold text-lg mb-6 text-center">Our Offices Across Punjab</h4>
+                    <h4 className="font-semibold text-lg mb-6 text-center">Our Office</h4>
                     <div className="flex flex-wrap justify-center gap-6">
                         {offices.map((office) => (
                             <a

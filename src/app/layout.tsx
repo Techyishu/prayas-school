@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/language-context";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
-import { CursorGlow } from "@/components/ui/cursor-glow";
+import { ConditionalLayout } from "@/components/layout/conditional-layout";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,15 +22,15 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Seabird Education | UK, Canada & Australia Study Visa Consultants",
   description:
-    "Get your UK, Canada & Australia Study Visa with expert guidance from Seabird Education. 18+ years experience, 18000+ visas processed. QUEAC, British Council & Canada certified. Offices across Punjab.",
+    "Get your UK, Canada & Australia Study Visa with expert guidance from Seabird Education. 18+ years experience, 18000+ visas processed. QUEAC, British Council & Canada certified. Located in Karnal, Haryana.",
   keywords: [
     "study abroad",
     "UK study visa",
     "Canada study visa",
     "Australia study visa",
     "student visa",
-    "Mohali",
-    "Punjab",
+    "Karnal",
+    "Haryana",
     "education consultant",
     "IELTS",
     "UK without IELTS",
@@ -64,25 +62,25 @@ export const metadata: Metadata = {
       name: "Seabird Education",
       alternateName: "Seabird International",
       url: "https://seabirdeducation.com",
-      logo: "https://seabirdeducation.com/logo.png",
-      description: "Leading immigration and study abroad consultant in Punjab with 18+ years of experience",
+      logo: "https://seabirdeducation.com/BeautyPlusCam_20250703081107381_save-removebg-preview.png",
+      description: "Leading immigration and study abroad consultant in Haryana with 18+ years of experience",
       foundingDate: "2007",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "SCF- 75 & 76, Phase 10, near Sarao Hotels",
-        addressLocality: "Mohali",
-        addressRegion: "Punjab",
-        postalCode: "160062",
+        streetAddress: "Mugal Canal Rd, near Ladla Bakery Chowk, Old Char Chaman, Dyal Singh Colony",
+        addressLocality: "Karnal",
+        addressRegion: "Haryana",
+        postalCode: "132001",
         addressCountry: "IN"
       },
-      telephone: "+91-7870478704",
-      email: "info@seabirdeducation.com",
+      telephone: "+91-9653505005",
+      email: "inderdeolseabird@gmail.com",
       sameAs: [
         "https://www.facebook.com/SeabirdGroup/",
         "https://www.instagram.com/seabirdeducation/",
         "https://www.youtube.com/@SeabirdIndia"
       ],
-      areaServed: ["India", "Punjab", "Mohali", "Chandigarh", "Gurdaspur", "Bathinda", "Ludhiana"],
+      areaServed: ["India", "Haryana", "Karnal"],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Study Abroad Services",
@@ -128,10 +126,7 @@ export default function RootLayout({
         className={`${inter.variable} ${outfit.variable} ${plusJakarta.variable} font-sans antialiased`}
       >
         <LanguageProvider>
-          <CursorGlow />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <ConditionalLayout>{children}</ConditionalLayout>
         </LanguageProvider>
       </body>
     </html>

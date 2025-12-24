@@ -16,7 +16,7 @@ const values = [
     {
         icon: Globe,
         title: "Global Reach",
-        description: "International branches in UK and Australia, with offices across Punjab for seamless processes.",
+        description: "International branches in UK and Australia, with office in Karnal, Haryana for seamless processes.",
         gradient: "from-blue-500 to-indigo-600",
     },
     {
@@ -38,7 +38,7 @@ const stats = [
     { value: "18,000+", label: "Visas Processed", description: "Success stories created" },
     { value: "70+", label: "Team Members", description: "Expert counsellors" },
     { value: "5+", label: "Countries Served", description: "USA, UK, Canada, Australia, NZ" },
-    { value: "7", label: "Offices", description: "Branches across Punjab" },
+    { value: "1", label: "Office", description: "Located in Karnal, Haryana" },
     { value: "100%", label: "Success Rate", description: "For student visas" },
 ]
 
@@ -51,16 +51,12 @@ const certifications = [
 ]
 
 const offices = [
-    { city: "Mohali (Head Office)", address: "SCF- 75 & 76, Phase 10, near Sarao Hotels", phone: "078704 78704" },
-    { city: "Gurdaspur", address: "Sco No. 31 First floor, Puda market, J R complex, Jail Rd", phone: "7508131000" },
-    { city: "Bathinda", address: "Ajit Road, In front of gali no.15, XOX Complex", phone: "9815485400" },
-    { city: "Kot Kapura", address: "Main chowk, Near Boys Government School", phone: "9815890500" },
-    { city: "Khamanon", address: "Grain Market Khamanon", phone: "9815225600" },
+    { city: "Karnal (Head Office)", address: "Mugal Canal Rd, near Ladla Bakery Chowk, Old Char Chaman, Dyal Singh Colony, Karnal, Haryana 132001", phone: "096535 05005" },
 ]
 
 const milestones = [
-    { year: "2007", event: "Founded in Mohali with a vision to democratize international education" },
-    { year: "2012", event: "Expanded to Gurdaspur, Bathinda, and Ludhiana offices" },
+    { year: "2007", event: "Founded with a vision to democratize international education" },
+    { year: "2012", event: "Established strong presence in education consultancy" },
     { year: "2017", event: "Reached 5,000+ successful visa applications milestone" },
     { year: "2020", event: "Established international branches in UK and Australia" },
     { year: "2024", event: "Crossed 18,000+ visas processed with 100% student visa success rate" },
@@ -68,7 +64,7 @@ const milestones = [
 
 export default function AboutPage() {
     const handleWhatsApp = () => {
-        window.open("https://wa.me/917870478704?text=Hi, I'd like to learn more about Seabird Education", "_blank")
+        window.open("https://wa.me/919653505005?text=Hi, I'd like to learn more about Seabird Education", "_blank")
     }
 
     return (
@@ -171,9 +167,9 @@ export default function AboutPage() {
                                     Unlocking <span className="gradient-text">Global Opportunities</span>
                                 </h2>
                                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                                    Seabird International, headquartered in Mohali, Chandigarh, has been a leading force
+                                    Seabird International, headquartered in Karnal, Haryana, has been a leading force
                                     in revolutionizing international education and immigration since 2007. With over 70 employees
-                                    and a 10,000 sq ft office, we serve as Punjab's premier education specialist.
+                                    and a dedicated team, we serve as Haryana's premier education specialist.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
                                     Our organization's mission is to help students realize their dreams of studying at
@@ -295,9 +291,9 @@ export default function AboutPage() {
                         <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-600 text-sm font-semibold uppercase tracking-wide mb-4">
                             Visit Us
                         </span>
-                        <h2 className="heading-lg text-navy-900">Our Offices Across Punjab</h2>
+                        <h2 className="heading-lg text-navy-900">Our Office</h2>
                         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                            With branches in key Punjab areas and international offices in UK & Australia,
+                            Located in Karnal, Haryana, with international offices in UK & Australia,
                             we're always close to you.
                         </p>
                     </motion.div>

@@ -18,6 +18,7 @@ const slides = [
         image: "/hero/slide-1.jpeg",
         stats: "98% Success",
         statsSecondary: "5K+ Visas",
+        objectPosition: "center 20%", // Adjust to show faces below navbar
     },
     {
         id: 2,
@@ -27,15 +28,17 @@ const slides = [
         image: "/hero/slide-2.jpeg",
         stats: "Top 100 Unis",
         statsSecondary: "10K+ Students",
+        objectPosition: "center 20%", // Adjust to show faces below navbar
     },
     {
         id: 3,
         title: "Work. Legally. Globally.",
         subtitle: "Skilled Migration Simplified",
         description: "Compliant, transparent visa support for professionals and families.",
-        image: "/hero/slide-3.jpeg",
+        image: "/WhatsApp Image 2025-12-18 at 13.13.03 (2).jpeg",
         stats: "70+ Countries",
         statsSecondary: "18+ Years",
+        objectPosition: "center 35%", // Adjust to show faces below navbar
     },
 ]
 
@@ -178,7 +181,7 @@ function GlassCard({
             >
                 <Button
                     className="btn-glass-ripple rounded-full bg-white text-slate-900 hover:bg-white px-8 py-6 text-base font-semibold"
-                    onClick={() => window.open("https://wa.me/917870478704", "_blank")}
+                    onClick={() => window.open("https://wa.me/919653505005", "_blank")}
                 >
                     Book Free Assessment
                 </Button>
@@ -288,6 +291,7 @@ export function HeroSlider() {
                                     priority={index === 0}
                                     className={`object-cover hero-image-zoom ${index === selectedIndex ? 'active' : ''}`}
                                     sizes="100vw"
+                                    style={{ objectPosition: slide.objectPosition }}
                                 />
                             </div>
 

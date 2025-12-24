@@ -13,7 +13,7 @@ const features = [
 
 export function CtaSection() {
     const handleWhatsApp = () => {
-        window.open("https://wa.me/917870478704?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
+        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
     }
 
     return (
@@ -138,10 +138,10 @@ export function CtaSection() {
                             className="btn-gold text-lg px-8 py-7 rounded-xl group"
                         >
                             <MessageCircle className="mr-2 h-5 w-5" />
-                            WhatsApp: 078704 78704
+                            WhatsApp: 096535 05005
                             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                         </Button>
-                        <a href="tel:+917870478704">
+                        <a href="tel:+919653505005">
                             <Button
                                 variant="outline"
                                 className="btn-glass text-lg px-8 py-7 rounded-xl group"
