@@ -135,20 +135,10 @@ export default function AboutPage() {
                         >
                             <div className="absolute -inset-4 bg-gradient-to-br from-teal-500/20 to-gold-500/20 rounded-3xl blur-2xl" />
                             <img
-                                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2940&auto=format&fit=crop"
+                                src="/office-building.jpg"
                                 alt="Seabird Education Office"
-                                className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+                                className="relative rounded-2xl shadow-2xl w-full object-contain aspect-[4/3] bg-gray-100"
                             />
-                            {/* Stats overlay */}
-                            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center">
-                                    <Building2 className="h-7 w-7 text-white" />
-                                </div>
-                                <div>
-                                    <div className="text-3xl font-bold text-navy-900">10,000</div>
-                                    <div className="text-sm text-gray-600">sq ft. Head Office</div>
-                                </div>
-                            </div>
                         </motion.div>
 
                         {/* Content */}

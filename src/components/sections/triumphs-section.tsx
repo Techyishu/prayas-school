@@ -9,7 +9,7 @@ import { ArrowUpRight, Sparkles } from 'lucide-react'
 const triumphStories = [
     {
         id: 1,
-        image: "/triumphs/uk-100.jpeg",
+        image: "/2.png.webp",
         title: "Celebrating",
         highlight: "100 UK Study",
         subtitle: "Visas",
@@ -17,7 +17,7 @@ const triumphStories = [
     },
     {
         id: 2,
-        image: "/triumphs/uk-300.jpeg",
+        image: "/7-1.png.webp",
         title: "Celebrating",
         highlight: "300 UK Study",
         subtitle: "Visas",
@@ -25,7 +25,7 @@ const triumphStories = [
     },
     {
         id: 3,
-        image: "/triumphs/canada.jpeg",
+        image: "/9-2.png.webp",
         title: "Celebrating",
         highlight: "Canada Study",
         subtitle: "Visas",
@@ -33,7 +33,7 @@ const triumphStories = [
     },
     {
         id: 4,
-        image: "/triumphs/australia.jpeg",
+        image: "/1-3.png.webp",
         title: "Celebrating",
         highlight: "70 Australia",
         subtitle: "Study Visas",

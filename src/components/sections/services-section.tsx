@@ -304,7 +304,7 @@ export function ServicesSection() {
                         <Button
                             size="lg"
                             variant="outline"
-                            className="rounded-full border-white/20 text-white hover:bg-white/10 hover:text-white px-8 py-6 text-base"
+                            className="rounded-full border-white/20 bg-white text-navy-900 hover:bg-white/90 px-8 py-6 text-base font-semibold"
                         >
                             View All Services
                             <ArrowRight className="w-5 h-5 ml-2" />
