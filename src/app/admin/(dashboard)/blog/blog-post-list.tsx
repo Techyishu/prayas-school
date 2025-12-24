@@ -17,9 +17,8 @@ export default function BlogPostList({ initialPosts }: { initialPosts: any[] }) 
 
         try {
             // Delete image from storage if it's from our storage
-            const imgUrl = post.image || post.image_url;
-            if (imgUrl && imgUrl.includes('supabase.co/storage')) {
-                const urlParts = imgUrl.split('/');
+            if (imageUrl && imageUrl.includes('supabase.co/storage')) {
+                const urlParts = imageUrl.split('/');
                 const filePath = urlParts.slice(urlParts.indexOf('blog')).join('/');
                 await supabase.storage.from('uploads').remove([filePath]);
             }
@@ -45,7 +44,7 @@ export default function BlogPostList({ initialPosts }: { initialPosts: any[] }) 
     return (
         <div className="grid grid-cols-1 gap-4">
             {initialPosts.map((post) => (
-                    <div key={post.id} className="bg-navy-900/50 border border-navy-700 rounded-xl p-5 flex items-start gap-4 hover:border-navy-600 transition group backdrop-blur-sm">
+                <div key={post.id} className="bg-navy-900/50 border border-navy-700 rounded-xl p-5 flex items-start gap-4 hover:border-navy-600 transition group backdrop-blur-sm">
                     <div className="relative w-32 h-24 rounded-lg overflow-hidden shrink-0">
                         <Image
                             src={post.image || post.image_url || 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop'}
