@@ -67,16 +67,16 @@ function AnimatedCounter({ end, suffix, duration = 2, delay = 0 }: AnimatedCount
 }
 
 const stats = [
-    { value: 18000, suffix: "+", label: "Visas Processed", description: "Success stories created", delay: 0 },
-    { value: 18, suffix: "+", label: "Years Experience", description: "Since 2007", delay: 0.2 },
-    { value: 70, suffix: "+", label: "Team Members", description: "Expert counsellors", delay: 0.4 },
-    { value: 100, suffix: "%", label: "Success Rate", description: "Student visas", delay: 0.6 },
+    { value: 1000, suffix: "+", label: "Students", description: "Currently enrolled", delay: 0 },
+    { value: 24, suffix: "+", label: "Years", description: "Of excellence", delay: 0.2 },
+    { value: 50, suffix: "+", label: "Teachers", description: "Expert faculty", delay: 0.4 },
+    { value: 95, suffix: "%", label: "Success Rate", description: "Board results", delay: 0.6 },
 ]
 
 const certifications = [
-    { name: "QUEAC", label: "Australia Certified", color: "from-teal-500 to-emerald-600" },
-    { name: "British Council", label: "UK Certified", color: "from-blue-500 to-indigo-600" },
-    { name: "IRCC", label: "Canada Certified", color: "from-red-500 to-rose-600" },
+    { name: "CBSE", label: "Affiliated", color: "from-teal-500 to-emerald-600" },
+    { name: "ISO 9001", label: "Certified", color: "from-blue-500 to-indigo-600" },
+    { name: "Govt. Approved", label: "Recognized", color: "from-red-500 to-rose-600" },
 ]
 
 // Pre-computed particle positions (deterministic to avoid hydration mismatch)
@@ -182,7 +182,7 @@ export function Stats3D() {
                         Numbers That <span className="text-metallic-gold">Speak</span>
                     </h2>
                     <p className="text-blue-100/60 max-w-xl mx-auto">
-                        18 years of excellence in helping students achieve their study abroad dreams.
+                        Over two decades of excellence in nurturing young minds and building future leaders.
                     </p>
                 </motion.div>
 

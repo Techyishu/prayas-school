@@ -12,32 +12,32 @@ import { Button } from "@/components/ui/button"
 const slides = [
     {
         id: 1,
-        title: "Unlock Global Opportunity",
-        subtitle: "Canada PR in 6 months",
-        description: "Expert-guided PR, work, and study pathways tailored to your profile.",
-        image: "/hero/slide-1.jpeg",
-        stats: "98% Success",
-        statsSecondary: "5K+ Visas",
+        title: "Nurturing Young Minds",
+        subtitle: "Excellence in Education",
+        description: "Providing quality education and holistic development for students to become responsible citizens.",
+        image: "/hero/slide-1.png",
+        stats: "95% Pass Rate",
+        statsSecondary: "1000+ Students",
         objectPosition: "center 20%", // Adjust to show faces below navbar
     },
     {
         id: 2,
-        title: "Study World-Class",
-        subtitle: "USA/UK/Australia University Visas",
-        description: "From admission to visa, we handle your complete application journey.",
-        image: "/hero/slide-2.jpeg",
-        stats: "Top 100 Unis",
-        statsSecondary: "10K+ Students",
+        title: "Building Tomorrow's Leaders",
+        subtitle: "Holistic Development",
+        description: "From academics to co-curricular activities, we nurture every aspect of a child's growth.",
+        image: "/hero/slide-2.png",
+        stats: "20+ Years",
+        statsSecondary: "500+ Alumni",
         objectPosition: "center 20%", // Adjust to show faces below navbar
     },
     {
         id: 3,
-        title: "Work. Legally. Globally.",
-        subtitle: "Skilled Migration Simplified",
-        description: "Compliant, transparent visa support for professionals and families.",
-        image: "/WhatsApp Image 2025-12-18 at 13.13.03 (2).jpeg",
-        stats: "70+ Countries",
-        statsSecondary: "18+ Years",
+        title: "Modern Learning Environment",
+        subtitle: "State-of-the-Art Facilities",
+        description: "Smart classrooms, sports facilities, and experienced teachers for comprehensive education.",
+        image: "/hero/slide-3.png",
+        stats: "50+ Teachers",
+        statsSecondary: "A+ Grade",
         objectPosition: "center 35%", // Adjust to show faces below navbar
     },
 ]
@@ -181,15 +181,15 @@ function GlassCard({
             >
                 <Button
                     className="btn-glass-ripple rounded-full bg-white text-slate-900 hover:bg-white px-8 py-6 text-base font-semibold"
-                    onClick={() => window.open("https://wa.me/919653505005", "_blank")}
+                    onClick={() => window.open("https://wa.me/919812026095", "_blank")}
                 >
-                    Book Free Assessment
+                    Book a Visit
                 </Button>
                 <Button
                     variant="ghost"
                     className="text-white hover:text-white hover:bg-white/10 rounded-full px-6 py-6 text-base font-medium border border-white/20 hover:border-white/40 transition-all"
                 >
-                    Explore Visas →
+                    Explore Programs →
                 </Button>
             </motion.div>
         </motion.div>

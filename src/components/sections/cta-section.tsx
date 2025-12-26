@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone, MessageCircle, CheckCircle } from "lucide-react"
 
 const features = [
-    "Pay only after visa approval",
-    "Free consultation at all branches",
-    "18+ years of experience",
-    "100% student visa success rate",
+    "Quality education since 2000",
+    "Safe and nurturing environment",
+    "Modern infrastructure & facilities",
+    "100% student development focus",
 ]
 
 export function CtaSection() {
     const handleWhatsApp = () => {
-        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
+        window.open("https://wa.me/919812026095?text=Hi, I'd like to schedule a visit", "_blank")
     }
 
     return (
@@ -77,7 +77,7 @@ export function CtaSection() {
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8"
                     >
                         <span className="text-sm text-blue-100 font-medium">
-                            🎓 Want to Study in UK Without IELTS? Ask Us How!
+                            🎓 Looking for Quality Education? Join Prayas Today!
                         </span>
                     </motion.div>
 
@@ -90,8 +90,8 @@ export function CtaSection() {
                         className="heading-lg text-white mb-6"
                     >
                         Ready to Start Your{" "}
-                        <span className="gradient-text-gold">Study Abroad</span>{" "}
-                        Journey?
+                        <span className="gradient-text-gold">Child's</span>{" "}
+                        Educational Journey?
                     </motion.h2>
 
                     {/* Subtitle */}
@@ -102,8 +102,8 @@ export function CtaSection() {
                         transition={{ delay: 0.2 }}
                         className="text-xl text-blue-100/80 mb-8 max-w-2xl mx-auto"
                     >
-                        Join 18,000+ students who trusted Seabird Education to achieve their dreams.
-                        Book a free consultation with our certified counsellors today!
+                        Join 1000+ students who are part of Prayas School family.
+                        Schedule a school visit today and discover our excellence!
                     </motion.p>
 
                     {/* Features */}
@@ -162,19 +162,19 @@ export function CtaSection() {
                     >
                         <div className="flex items-center gap-2">
                             <span>✓</span>
-                            <span>British Council Certified</span>
+                            <span>CBSE Affiliated</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <span>✓</span>
-                            <span>QEAC Certified</span>
+                            <span>ISO Certified</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <span>✓</span>
-                            <span>Since 2007</span>
+                            <span>Since 2000</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <span>✓</span>
-                            <span>5 Offices in Punjab</span>
+                            <span>2 Modern Campuses</span>
                         </div>
                     </motion.div>
                 </div>

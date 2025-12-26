@@ -18,16 +18,16 @@ export function WhatsAppButton() {
     }, [])
 
     const handleWhatsApp = () => {
-        window.open("https://wa.me/919653505005?text=Hi, I'd like to know more about your services", "_blank")
+        window.open("https://wa.me/919812026095?text=Hi, I have a query regarding admissions", "_blank")
     }
 
     return (
         <motion.button
             onClick={handleWhatsApp}
             initial={{ scale: 0, opacity: 0 }}
-            animate={{ 
-                scale: isVisible ? 1 : 0, 
-                opacity: isVisible ? 1 : 0 
+            animate={{
+                scale: isVisible ? 1 : 0,
+                opacity: isVisible ? 1 : 0
             }}
             transition={{ duration: 0.3, type: "spring" }}
             className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#20BD5A] text-white rounded-full shadow-lg shadow-[#25D366]/50 hover:shadow-xl hover:shadow-[#25D366]/60 flex items-center justify-center transition-all duration-300 hover:scale-110 group"

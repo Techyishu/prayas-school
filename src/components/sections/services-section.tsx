@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
 import {
     MapPin, GraduationCap, Briefcase, Users, Heart, Building2,
@@ -14,85 +15,85 @@ import { Button } from "@/components/ui/button"
 const services = [
     {
         id: 1,
-        title: "Canada Express Entry",
-        subtitle: "PR in 6 months",
-        description: "Federal skilled worker, trades, and Canadian experience class pathways.",
-        icon: MapPin,
-        flag: "🇨🇦",
-        stats: { successRate: "98%", avgTime: "6 months" },
+        title: "Primary School",
+        subtitle: "Nursery to Class 5",
+        description: "Strong foundation in academics, values, and life skills for young learners.",
+        icon: GraduationCap,
+        flag: "📚",
+        stats: { successRate: "98%", avgTime: "5 years" },
         color: "from-red-500 to-rose-600",
-        image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&h=600&fit=crop",
+        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
         gridClass: "services-card-1",
         featured: true,
     },
     {
         id: 2,
-        title: "USA H1B Specialty",
-        subtitle: "Tech Professionals",
-        description: "Work visa for specialty occupations. EB2/EB3 processing available.",
-        icon: Briefcase,
-        flag: "🇺🇸",
-        stats: { successRate: "94%", avgTime: "45 days" },
+        title: "Middle School",
+        subtitle: "Class 6 to 8",
+        description: "Comprehensive curriculum focusing on academic excellence and character development.",
+        icon: Users,
+        flag: "🎯",
+        stats: { successRate: "96%", avgTime: "3 years" },
         color: "from-blue-500 to-indigo-600",
-        image: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=800&h=600&fit=crop",
+        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
         gridClass: "services-card-2",
     },
     {
         id: 3,
-        title: "Australia 482",
-        subtitle: "Skilled Migration",
-        description: "Temporary skill shortage visa with employer sponsorship path.",
+        title: "High School",
+        subtitle: "Class 9 to 12",
+        description: "Advanced preparation for higher education with science, commerce, and arts streams.",
         icon: Award,
-        flag: "🇦🇺",
-        stats: { successRate: "96%", avgTime: "3 months" },
+        flag: "🏆",
+        stats: { successRate: "95%", avgTime: "4 years" },
         color: "from-teal-500 to-emerald-600",
-        image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&h=600&fit=crop",
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop",
         gridClass: "services-card-3",
     },
     {
         id: 4,
-        title: "UK Student Tier 4",
-        subtitle: "Top Universities",
-        description: "Study at world-ranked UK universities with post-study work rights.",
-        icon: GraduationCap,
-        flag: "🇬🇧",
-        stats: { successRate: "99%", avgTime: "21 days" },
+        title: "Sports Academy",
+        subtitle: "Physical Excellence",
+        description: "Professional coaching in cricket, football, basketball, and athletics.",
+        icon: Briefcase,
+        flag: "⚽",
+        stats: { successRate: "100%", avgTime: "Year-round" },
         color: "from-purple-500 to-violet-600",
-        image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop",
+        image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop",
         gridClass: "services-card-4",
     },
     {
         id: 5,
-        title: "Family Sponsorship",
-        subtitle: "Reunite Globally",
-        description: "Spouse, parent, and dependent visa processing for major destinations.",
+        title: "Arts & Culture",
+        subtitle: "Creative Development",
+        description: "Music, dance, painting, and drama programs for artistic expression.",
         icon: Heart,
-        flag: "🌍",
-        stats: { successRate: "97%", avgTime: "4 months" },
+        flag: "🎨",
+        stats: { successRate: "100%", avgTime: "Weekly" },
         color: "from-pink-500 to-rose-600",
-        image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=600&fit=crop",
+        image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop",
         gridClass: "services-card-5",
     },
     {
         id: 6,
-        title: "Business & Investor",
-        subtitle: "Entrepreneur Routes",
-        description: "Start-up visas, investor immigration, and business expansion programs.",
+        title: "Science Labs",
+        subtitle: "Hands-on Learning",
+        description: "Well-equipped physics, chemistry, and biology labs for practical learning.",
         icon: Building2,
-        flag: "💼",
-        stats: { successRate: "92%", avgTime: "6 months" },
+        flag: "🔬",
+        stats: { successRate: "100%", avgTime: "Daily" },
         color: "from-amber-500 to-orange-600",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
+        image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop",
         gridClass: "services-card-6",
     },
 ]
 
 // Process timeline steps
 const processSteps = [
-    { step: "01", title: "Consultation", description: "Free eligibility assessment", icon: Phone, duration: "30 min" },
-    { step: "02", title: "Documentation", description: "Complete file preparation", icon: FileCheck, duration: "1-2 weeks" },
-    { step: "03", title: "Processing", description: "Application submission", icon: Clock, duration: "Variable" },
-    { step: "04", title: "Success", description: "Visa approval & travel", icon: CheckCircle, duration: "Celebration!" },
+    { step: "01", title: "Inquiry", description: "Free school visit consultation", icon: Phone, duration: "30 min" },
+    { step: "02", title: "Registration", description: "Complete admission process", icon: FileCheck, duration: "1-2 days" },
+    { step: "03", title: "Learning", description: "Start your educational journey", icon: Clock, duration: "Academic Year" },
+    { step: "04", title: "Success", description: "Academic excellence & growth", icon: CheckCircle, duration: "Continuous!" },
 ]
 
 // Service Card Component
@@ -108,7 +109,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className={`${service.gridClass} ${service.featured ? 'md:row-span-1' : ''}`}
         >
-            <div className={`service-card-premium rounded-2xl h-72 md:h-80 relative group cursor-pointer`}>
+            <Link href="/academics" className={`service-card-premium rounded-2xl h-72 md:h-80 relative group cursor-pointer block`}>
                 {/* Background Image */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
                     <Image
@@ -163,7 +164,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
                 <div className={`absolute top-4 right-4 w-10 h-10 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-lg`}>
                     <service.icon className="w-5 h-5 text-white" />
                 </div>
-            </div>
+            </Link>
         </motion.div>
     )
 }
@@ -246,19 +247,19 @@ export function ServicesSection() {
                     </motion.div>
 
                     <h2 className="text-3xl md:text-5xl font-black text-white mb-4 font-[family-name:var(--font-plus-jakarta)] tracking-tight">
-                        Comprehensive Immigration <span className="text-cyan-400">Solutions</span>
+                        Comprehensive Educational <span className="text-cyan-400">Programs</span>
                     </h2>
 
                     <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto">
-                        From consultation to visa approval – end-to-end expertise across 50+ countries
+                        From primary to high school – quality education with holistic development
                     </p>
 
                     {/* Stats Row */}
                     <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
                         {[
-                            { value: "5000+", label: "Visas Processed" },
-                            { value: "98%", label: "Success Rate" },
-                            { value: "45 Days", label: "Avg. Processing" },
+                            { value: "1000+", label: "Students Enrolled" },
+                            { value: "95%", label: "Success Rate" },
+                            { value: "50+", label: "Expert Teachers" },
                         ].map((stat, i) => (
                             <div key={i} className="text-center">
                                 <div className="text-2xl md:text-3xl font-bold text-white">{stat.value}</div>
@@ -287,28 +288,30 @@ export function ServicesSection() {
                     className="mt-20 glass-hero-card rounded-2xl p-8 md:p-12 text-center"
                 >
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                        Ready to Start Your Journey?
+                        Ready to Enroll Your Child?
                     </h3>
                     <p className="text-white/60 mb-8 max-w-xl mx-auto">
-                        Get a personalized assessment of your immigration options. Our experts are standing by.
+                        Book a school visit and discover how we nurture young minds for a brighter future.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Button
                             size="lg"
                             className="btn-glass-ripple rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-6 text-base font-semibold shadow-lg shadow-cyan-500/25"
-                            onClick={() => window.open("https://wa.me/919653505005", "_blank")}
+                            onClick={() => window.open("https://wa.me/919812026095", "_blank")}
                         >
                             <Phone className="w-5 h-5 mr-2" />
-                            Free Assessment
+                            Book a Visit
                         </Button>
-                        <Button
-                            size="lg"
-                            variant="outline"
-                            className="rounded-full border-white/20 bg-white text-navy-900 hover:bg-white/90 px-8 py-6 text-base font-semibold"
-                        >
-                            View All Services
-                            <ArrowRight className="w-5 h-5 ml-2" />
-                        </Button>
+                        <Link href="/academics">
+                            <Button
+                                size="lg"
+                                variant="outline"
+                                className="rounded-full border-white/20 bg-white text-navy-900 hover:bg-white/90 px-8 py-6 text-base font-semibold"
+                            >
+                                View All Programs
+                                <ArrowRight className="w-5 h-5 ml-2" />
+                            </Button>
+                        </Link>
                     </div>
                 </motion.div>
             </div>

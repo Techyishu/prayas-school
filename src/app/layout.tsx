@@ -20,36 +20,37 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Seabird Education | UK, Canada & Australia Study Visa Consultants",
+  title: "Prayas School | Nurturing Young Minds for a Brighter Future",
   description:
-    "Get your UK, Canada & Australia Study Visa with expert guidance from Seabird Education. 18+ years experience, 18000+ visas processed. QUEAC, British Council & Canada certified. Located in Karnal, Haryana.",
+    "Prayas School is dedicated to providing quality education and nurturing young minds to become responsible citizens and lifelong learners. Located in Karnal, Haryana.",
   keywords: [
-    "study abroad",
-    "UK study visa",
-    "Canada study visa",
-    "Australia study visa",
-    "student visa",
-    "Karnal",
-    "Haryana",
-    "education consultant",
-    "IELTS",
-    "UK without IELTS",
-    "immigration consultant",
-    "Seabird Education",
+    "Prayas School",
+    "school education",
+    "Karnal school",
+    "Haryana education",
+    "primary education",
+    "middle school",
+    "high school",
+    "quality education",
+    "co-curricular activities",
+    "sports education",
   ],
-  authors: [{ name: "Seabird Education" }],
+  authors: [{ name: "Prayas School" }],
   openGraph: {
-    title: "Seabird Education | UK, Canada & Australia Study Visa Consultants",
+    title: "Prayas School | Nurturing Young Minds for a Brighter Future",
     description:
-      "Expert study abroad guidance since 2007. 18000+ visas processed with 100% student visa success rate. Free consultation available.",
+      "Excellence in education with focus on holistic development of students. State-of-the-art facilities and experienced faculty.",
     type: "website",
     locale: "en_IN",
-    siteName: "Seabird Education",
+    siteName: "Prayas School",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Seabird Education | Study Abroad Experts",
-    description: "Your trusted partner for UK, Canada & Australia study visas. 18+ years of experience.",
+    title: "Prayas School | Excellence in Education",
+    description: "Your trusted partner for quality education. Nurturing students for success.",
+  },
+  icons: {
+    icon: '/WhatsApp_Image_2025-12-26_at_10.51.54-removebg-preview.png',
   },
   robots: {
     index: true,
@@ -59,54 +60,51 @@ export const metadata: Metadata = {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      name: "Seabird Education",
-      alternateName: "Seabird International",
-      url: "https://seabirdeducation.com",
-      logo: "https://seabirdeducation.com/BeautyPlusCam_20250703081107381_save-removebg-preview.png",
-      description: "Leading immigration and study abroad consultant in Haryana with 18+ years of experience",
-      foundingDate: "2007",
+      name: "Prayas School",
+      url: "https://prayasschool.com",
+      logo: "https://prayasschool.com/WhatsApp_Image_2025-12-26_at_10.51.54-removebg-preview.png",
+      description: "Leading educational institution in Haryana dedicated to nurturing young minds",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Mugal Canal Rd, near Ladla Bakery Chowk, Old Char Chaman, Dyal Singh Colony",
-        addressLocality: "Karnal",
+        addressLocality: "Kunjpura",
         addressRegion: "Haryana",
-        postalCode: "132001",
-        addressCountry: "IN"
+        addressCountry: "IN",
+        streetAddress: "Opposite Batra Filling Station, Karnal Kunjpura Road"
       },
-      telephone: "+91-9653505005",
-      email: "inderdeolseabird@gmail.com",
+      telephone: "+91-9812026095",
+      email: "info@prayasschool.com",
       sameAs: [
-        "https://www.facebook.com/SeabirdGroup/",
-        "https://www.instagram.com/seabirdeducation/",
-        "https://www.youtube.com/@SeabirdIndia"
+        "https://www.facebook.com/prayasschool",
+        "https://www.instagram.com/prayasschool",
+        "https://www.youtube.com/prayasschool"
       ],
       areaServed: ["India", "Haryana", "Karnal"],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Study Abroad Services",
+        name: "Educational Programs",
         itemListElement: [
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "UK Study Visa",
-              description: "Expert guidance for UK student visa applications"
+              name: "Primary Education",
+              description: "Comprehensive primary school program for young learners"
             }
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Canada Study Visa",
-              description: "Complete support for Canadian study permits"
+              name: "Middle School",
+              description: "Strong academic foundation for middle school students"
             }
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Australia Study Visa",
-              description: "QEAC certified Australia visa consultancy"
+              name: "High School",
+              description: "Advanced curriculum preparing students for higher education"
             }
           }
         ]

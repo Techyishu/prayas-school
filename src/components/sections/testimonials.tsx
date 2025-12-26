@@ -9,60 +9,43 @@ import { useState, useEffect, useCallback, useMemo } from "react"
 
 const testimonials = [
     {
-        name: "Navneet Rehal",
-        country: "UK Study Visa",
-        flag: "🇬🇧",
-        quote: "Excellent & Experienced Teaching Staff. Helpful. Great Environment. Small batches to ensure proper gain of knowledge and learning. They have answer to almost every query one has. I will surely recommend Seabird to everyone!",
-        rating: 5,
-        avatar: "NR",
-    },
-    {
-        name: "Jobanpreet Singh",
-        country: "Study Abroad",
-        flag: "🎓",
-        quote: "If you're looking for the best consultants and visa experts in the industry, look no further than Seabird Education. They are the reason I'm now pursuing my dream education overseas. Highly recommended!",
-        rating: 5,
-        avatar: "JS",
-    },
-    {
-        name: "Sukhchain Singh",
-        country: "UK Study Visa",
-        flag: "🇬🇧",
-        quote: "Seabird Education is the best UK education consultant. I got my cousin's visa within 22 days. Specially thanks to Iqbal sir for the quick processing and guidance throughout.",
-        rating: 5,
-        avatar: "SS",
-    },
-    {
-        name: "Palak Sachdeva",
-        country: "Student Visa",
-        flag: "🎓",
-        quote: "The Seabird International team is too supportive. The staff is good in behaviour as well they are always ready to help their students immediately. I recommend to all of them who want to study abroad!",
+        name: "Priya Sharma",
+        country: "Parent",
+        flag: "👨‍👩‍👧",
+        quote: "Prayas School has transformed my child's confidence. The teachers are incredibly supportive and focus on individual attention. The balance between academics and sports is perfect.",
         rating: 5,
         avatar: "PS",
     },
     {
-        name: "Gurpreet Kaur",
-        country: "UK Visa",
-        flag: "🇬🇧",
-        quote: "Mai bhut dhanvaadi aa seabird team da, etho mere bache da visa lgon da supna pura ho skya. Thankful to Bobby sir and Amarjeet sir for making our dream come true!",
+        name: "Rahul Verma",
+        country: "Alumni",
+        quote: "My years at Prayas School were the best. The foundation I received here helped me crack competitive exams. The disciplined environment and quality education are unmatched in Karnal.",
         rating: 5,
-        avatar: "GK",
+        avatar: "RV",
     },
     {
-        name: "Mandeep Virk",
-        country: "Immigration",
-        flag: "🌍",
-        quote: "Best immigration which deals with the best and most successful visa rates. Must visit to make your dreams come true. The entire team is very professional and supportive.",
+        name: "Anita Gupta",
+        country: "Parent",
+        flag: "👩‍👧",
+        quote: "I see a positive change in my daughter. She enjoys going to school every day. The smart classrooms and library facilities have really helped in her learning process.",
         rating: 5,
-        avatar: "MV",
+        avatar: "AG",
     },
     {
-        name: "Manpreet Kaur",
-        country: "Student",
-        flag: "🎓",
-        quote: "Seabird is a good institute. Students will be beneficial while studying over here. Teachers are good and their behavior is also good while teaching. They do a lot of hard work. Good results guaranteed!",
+        name: "Vikram Singh",
+        country: "Student - Class 10",
+        flag: "👨‍🎓",
+        quote: "The teachers here explain concepts very clearly. I love the science labs where we get to do practical experiments. Sports day is my favorite event of the year!",
         rating: 5,
-        avatar: "MK",
+        avatar: "VS",
+    },
+    {
+        name: "Mrs. Mehra",
+        country: "Parent",
+        flag: "👩‍👦",
+        quote: "Best school in the region! The focus on moral values along with studies is what impressed me the most. I am glad I chose Prayas School for my son.",
+        rating: 5,
+        avatar: "MM",
     },
 ]
 
@@ -132,7 +115,7 @@ export function Testimonials() {
                         Hear What Our Students Say!
                     </h2>
                     <p className="text-gray-600 max-w-xl mx-auto">
-                        Real stories from students who achieved their study abroad dreams with Seabird Education.
+                        Real experiences from parents, students, and alumni of Prayas School.
                     </p>
                 </motion.div>
 

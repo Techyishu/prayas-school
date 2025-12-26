@@ -9,62 +9,62 @@ import Link from "next/link"
 const values = [
     {
         icon: Target,
-        title: "Expertise",
-        description: "Decades of experience in immigration services with a 100% success ratio for student visas.",
+        title: "Academic Excellence",
+        description: "Committed to providing quality education with experienced teachers and modern teaching methods.",
         gradient: "from-teal-500 to-emerald-600",
     },
     {
         icon: Globe,
-        title: "Global Reach",
-        description: "International branches in UK and Australia, with office in Karnal, Haryana for seamless processes.",
+        title: "Holistic Development",
+        description: "Focus on overall growth including academics, sports, arts, and character building.",
         gradient: "from-blue-500 to-indigo-600",
     },
     {
         icon: Eye,
-        title: "Transparency",
-        description: "We only charge processing fees after visa approval. No hidden fees, no false promises.",
+        title: "Integrity & Values",
+        description: "Building strong moral foundations and ethical values in every student.",
         gradient: "from-gold-500 to-amber-600",
     },
     {
         icon: Award,
-        title: "Certified Counsellors",
-        description: "QUEAC, British Council, and Canada certified professionals guiding your journey.",
+        title: "Modern Infrastructure",
+        description: "State-of-the-art facilities including smart classrooms, labs, and sports grounds.",
         gradient: "from-purple-500 to-pink-600",
     },
 ]
 
 const stats = [
-    { value: "18+", label: "Years of Experience", description: "Established in 2007" },
-    { value: "18,000+", label: "Visas Processed", description: "Success stories created" },
-    { value: "70+", label: "Team Members", description: "Expert counsellors" },
-    { value: "5+", label: "Countries Served", description: "USA, UK, Canada, Australia, NZ" },
-    { value: "1", label: "Office", description: "Located in Karnal, Haryana" },
-    { value: "100%", label: "Success Rate", description: "For student visas" },
+    { value: "20+", label: "Years of Excellence", description: "Since inception" },
+    { value: "1000+", label: "Students Enrolled", description: "Nurturing young minds" },
+    { value: "50+", label: "Expert Teachers", description: "Highly qualified faculty" },
+    { value: "95%", label: "Board Results", description: "Consistent high performance" },
+    { value: "2", label: "Campuses", description: "In Karnal region" },
+    { value: "100%", label: "Success Rate", description: "In student development" },
 ]
 
 const certifications = [
-    "QUEAC (Qualified Education Agent Counsellor) - Australia",
-    "British Council Certified - UK",
-    "Canada Course Graduate Certified",
-    "Education New Zealand Trained Agent",
-    "Qualified Professional Development in UK Education",
+    "CBSE Affiliated School",
+    "ISO 9001:2015 Certified",
+    "Government Recognized Institution",
+    "State-of-the-Art Smart Classrooms",
+    "Qualified & Experienced Teaching Staff",
 ]
 
 const offices = [
-    { city: "Karnal (Head Office)", address: "Mugal Canal Rd, near Ladla Bakery Chowk, Old Char Chaman, Dyal Singh Colony, Karnal, Haryana 132001", phone: "096535 05005" },
+    { city: "Main Campus", address: "Opposite Batra Filling Station, Karnal Kunjpura Road, Kunjpura", phone: "9812026095" },
 ]
 
 const milestones = [
-    { year: "2007", event: "Founded with a vision to democratize international education" },
-    { year: "2012", event: "Established strong presence in education consultancy" },
-    { year: "2017", event: "Reached 5,000+ successful visa applications milestone" },
-    { year: "2020", event: "Established international branches in UK and Australia" },
-    { year: "2024", event: "Crossed 18,000+ visas processed with 100% student visa success rate" },
+    { year: "2000", event: "Founded with a vision to provide quality education" },
+    { year: "2005", event: "Expanded to include middle school program" },
+    { year: "2010", event: "Added high school with science, commerce, and arts" },
+    { year: "2015", event: "Inaugurated new campus with modern facilities" },
+    { year: "2024", event: "Celebrating 20+ years of academic excellence with 1000+ students" },
 ]
 
 export default function AboutPage() {
     const handleWhatsApp = () => {
-        window.open("https://wa.me/919653505005?text=Hi, I'd like to learn more about Seabird Education", "_blank")
+        window.open("https://wa.me/919812026095?text=Hi, I'd like to learn more about Prayas School", "_blank")
     }
 
     return (
@@ -86,14 +86,14 @@ export default function AboutPage() {
                         className="text-center max-w-4xl mx-auto"
                     >
                         <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-teal-400 text-sm font-semibold uppercase tracking-wide mb-6">
-                            Established 2007
+                            Established 2000
                         </span>
                         <h1 className="heading-xl text-white mb-6">
-                            About <span className="gradient-text-gold">Seabird International</span>
+                            About <span className="gradient-text-gold">Prayas School</span>
                         </h1>
                         <p className="text-xl text-blue-100/80 leading-relaxed">
-                            With a commitment to excellence, Seabird helps you navigate the complexities of
-                            immigration processes, ensuring a smooth and successful journey to your dream destination.
+                            With a commitment to excellence, Prayas School nurtures young minds to become
+                            responsible citizens and lifelong learners through quality education and holistic development.
                         </p>
                     </motion.div>
                 </div>
@@ -136,7 +136,7 @@ export default function AboutPage() {
                             <div className="absolute -inset-4 bg-gradient-to-br from-teal-500/20 to-gold-500/20 rounded-3xl blur-2xl" />
                             <img
                                 src="/office-building.jpg"
-                                alt="Seabird Education Office"
+                                alt="Prayas School Campus"
                                 className="relative rounded-2xl shadow-2xl w-full object-contain aspect-[4/3] bg-gray-100"
                             />
                         </motion.div>
@@ -154,17 +154,17 @@ export default function AboutPage() {
                                     Our Story
                                 </span>
                                 <h2 className="heading-lg text-navy-900 mb-6">
-                                    Unlocking <span className="gradient-text">Global Opportunities</span>
+                                    Nurturing <span className="gradient-text">Young Minds</span>
                                 </h2>
                                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                                    Seabird International, headquartered in Karnal, Haryana, has been a leading force
-                                    in revolutionizing international education and immigration since 2007. With over 70 employees
-                                    and a dedicated team, we serve as Haryana's premier education specialist.
+                                    Prayas School, located in Karnal, Haryana, has been a beacon of
+                                    quality education for over two decades. With experienced teachers and modern infrastructure,
+                                    we serve as one of Haryana's premier educational institutions.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    Our organization's mission is to help students realize their dreams of studying at
-                                    international universities. We strive to overcome any obstacles by bringing in qualified
-                                    experts with international certifications.
+                                    Our school's mission is to provide holistic education that develops academic excellence,
+                                    moral values, and life skills. We strive to prepare students to become
+                                    responsible citizens and lifelong learners.
                                 </p>
                             </div>
 
@@ -185,6 +185,55 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            {/* Director's Message Section */}
+            <section className="py-24 bg-aliceblue">
+                <div className="container-custom">
+                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                        {/* Image */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="relative lg:order-last"
+                        >
+                            <div className="absolute -inset-4 bg-gradient-to-br from-gold-500/20 to-teal-500/20 rounded-3xl blur-2xl" />
+                            <img
+                                src="/md-photo.jpeg"
+                                alt="Managing Director"
+                                className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[3/4]"
+                            />
+                        </motion.div>
+
+                        {/* Content */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="space-y-6"
+                        >
+                            <span className="inline-block px-4 py-1.5 rounded-full bg-gold-500/10 text-gold-600 text-sm font-semibold uppercase tracking-wide">
+                                Leadership
+                            </span>
+                            <h2 className="heading-lg text-navy-900">
+                                Message from the <span className="gradient-text">Managing Director</span>
+                            </h2>
+                            <blockquote className="text-xl italic text-navy-800 border-l-4 border-gold-500 pl-6 my-6">
+                                "Education is not just about academic excellence, but about character building and holistic development."
+                            </blockquote>
+                            <p className="text-lg text-gray-600 leading-relaxed">
+                                At Prayas School, we believe in nurturing every child's potential. Our goal is to create an environment where students feel safe, valued, and inspired to learn. We are committed to providing the best facilities and faculty to ensure our students succeed in all walks of life.
+                            </p>
+                            <div className="pt-4">
+                                <p className="font-bold text-navy-900 text-lg">Managing Director</p>
+                                <p className="text-teal-600">Prayas School</p>
+                            </div>
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
             {/* Values Section */}
             <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
                 <div className="container-custom">
@@ -195,9 +244,9 @@ export default function AboutPage() {
                         className="text-center mb-16"
                     >
                         <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-600 text-sm font-semibold uppercase tracking-wide mb-4">
-                            Why Choose Seabird
+                            Why Choose Prayas
                         </span>
-                        <h2 className="heading-lg text-navy-900">The Seabird Advantage</h2>
+                        <h2 className="heading-lg text-navy-900">The Prayas Advantage</h2>
                     </motion.div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -237,7 +286,7 @@ export default function AboutPage() {
                         <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-600 text-sm font-semibold uppercase tracking-wide mb-4">
                             Our Journey
                         </span>
-                        <h2 className="heading-lg text-navy-900">18 Years of Excellence</h2>
+                        <h2 className="heading-lg text-navy-900">20+ Years of Excellence</h2>
                     </motion.div>
 
                     <div className="max-w-3xl mx-auto">
@@ -281,10 +330,10 @@ export default function AboutPage() {
                         <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-600 text-sm font-semibold uppercase tracking-wide mb-4">
                             Visit Us
                         </span>
-                        <h2 className="heading-lg text-navy-900">Our Office</h2>
+                        <h2 className="heading-lg text-navy-900">Our Campus</h2>
                         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                            Located in Karnal, Haryana, with international offices in UK & Australia,
-                            we're always close to you.
+                            Located in Karnal, Haryana, with modern infrastructure and facilities,
+                            we provide the best learning environment for students.
                         </p>
                     </motion.div>
 
@@ -327,14 +376,14 @@ export default function AboutPage() {
                         className="max-w-2xl mx-auto"
                     >
                         <h2 className="heading-lg text-white mb-6">
-                            Ready to Start Your Journey?
+                            Ready to Join Prayas School?
                         </h2>
                         <p className="text-blue-100/80 text-lg mb-8">
-                            Join 18,000+ students who trusted Seabird to achieve their study abroad dreams.
-                            Free consultation available at all our branches.
+                            Join 1000+ students who are part of our educational family.
+                            Schedule a school visit and experience our learning environment.
                         </p>
                         <Button onClick={handleWhatsApp} className="btn-gold text-lg px-8 py-6 rounded-xl">
-                            Get Free Consultation
+                            Book a School Visit
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </Button>
                     </motion.div>

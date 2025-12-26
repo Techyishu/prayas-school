@@ -9,61 +9,61 @@ import { Button } from "@/components/ui/button"
 const contactInfo = [
     {
         icon: MapPin,
-        title: "Head Office - Karnal",
-        lines: ["Mugal Canal Rd, near Ladla Bakery Chowk", "Old Char Chaman, Dyal Singh Colony", "Karnal, Haryana 132001"],
+        title: "Main Campus",
+        lines: ["Opposite Batra Filling Station,", "Karnal Kunjpura Road, Kunjpura"],
         gradient: "from-teal-500 to-emerald-600",
     },
     {
         icon: Phone,
         title: "Phone",
-        lines: ["096535 05005 (Front Desk)", "Toll Free Consultation"],
+        lines: ["+91 9812026095", "+91 9050002491"],
         gradient: "from-blue-500 to-indigo-600",
     },
     {
         icon: Mail,
         title: "Email",
-        lines: ["inderdeolseabird@gmail.com"],
+        lines: ["info@prayasschool.com", "admissions@prayasschool.com"],
         gradient: "from-purple-500 to-pink-600",
     },
     {
         icon: Clock,
-        title: "Office Hours",
-        lines: ["Mon - Sat: 9:00 AM - 7:00 PM", "Sunday: Closed"],
+        title: "School Hours",
+        lines: ["Mon - Sat: 8:00 AM - 4:00 PM", "Sunday: Closed"],
         gradient: "from-amber-500 to-orange-600",
     },
 ]
 
 const offices = [
     {
-        city: "Karnal (Head Office)",
-        address: "Mugal Canal Rd, near Ladla Bakery Chowk, Old Char Chaman, Dyal Singh Colony, Karnal, Haryana 132001",
-        phone: "096535 05005",
-        email: "inderdeolseabird@gmail.com"
+        city: "Main Campus",
+        address: "Opposite Batra Filling Station, Karnal Kunjpura Road, Kunjpura",
+        phone: "9812026095",
+        email: "info@prayasschool.com"
     },
 ]
 
 const faqs = [
     {
-        question: "How long does a free consultation last?",
-        answer: "Our free consultation typically lasts 30-45 minutes. During this time, we assess your profile, discuss your goals, and recommend the best study destination and pathway for you."
+        question: "How can I enroll my child at Prayas School?",
+        answer: "Admissions are open throughout the year. Visit our campus for a school tour, meet our principal, and complete the admission process with necessary documents."
     },
     {
-        question: "When do I need to pay your fees?",
-        answer: "We only charge our processing fees AFTER your visa is approved. All payments for UK, Canada, and Australia study visas are made post-visa. No upfront consulting fees!"
+        question: "What documents are required for admission?",
+        answer: "Required documents include: Birth certificate, previous school records, photos, and address proof. For higher classes, additional documents may be needed."
     },
     {
-        question: "Do you help with accommodation and settling abroad?",
-        answer: "Yes! We provide comprehensive support including university accommodation guidance, pre-departure orientation, and connections to student communities abroad."
+        question: "Does the school provide transportation?",
+        answer: "Yes! We provide safe and reliable bus service covering major areas in Karnal. Contact our transport department for route details and fees."
     },
     {
-        question: "Can I study in UK without IELTS?",
-        answer: "Yes, there are options to study in the UK without IELTS. We can guide you through MOI (Medium of Instruction) options and universities that accept alternative English proficiency proof."
+        question: "When does the new academic session start?",
+        answer: "The new academic session usually begins in April. We recommend starting the admission process by February to ensure availability of seats."
     },
 ]
 
 export default function ContactPage() {
     const handleWhatsApp = () => {
-        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
+        window.open("https://wa.me/919812026095?text=Hi, I'd like to book a free consultation for school admission", "_blank")
     }
 
     return (
@@ -90,8 +90,8 @@ export default function ContactPage() {
                             Get in <span className="gradient-text-gold">Touch</span>
                         </h1>
                         <p className="text-xl text-blue-100/80 max-w-2xl mx-auto">
-                            Have questions about studying abroad? Our certified counsellors are here to help.
-                            Free consultation at all our branches!
+                            Have questions about Prayas School? Our admissions team is here to help.
+                            Schedule a school visit today!
                         </p>
                     </motion.div>
                 </div>
@@ -137,9 +137,9 @@ export default function ContactPage() {
                             className="btn-gold text-lg px-8 py-6 rounded-xl w-full sm:w-auto"
                         >
                             <MessageCircle className="mr-2 h-5 w-5" />
-                            WhatsApp: 096535 05005
+                            WhatsApp: 9812026095
                         </Button>
-                        <a href="tel:+919653505005">
+                        <a href="tel:+919812026095">
                             <Button
                                 variant="outline"
                                 className="text-lg px-8 py-6 rounded-xl border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white w-full sm:w-auto"
@@ -168,11 +168,11 @@ export default function ContactPage() {
                                     Send a Message
                                 </span>
                                 <h2 className="heading-md text-navy-900 mb-4">
-                                    Contact Us for Expert Guidance
+                                    Contact Us for Admissions
                                 </h2>
                                 <p className="text-gray-600">
-                                    Fill out the form below and our team will get back to you within 24 hours
-                                    with personalized guidance and support.
+                                    Fill out the form below and our admissions team will get back to you within 24 hours
+                                    with all enrollment details and guidance.
                                 </p>
                             </div>
                             <ContactForm />
@@ -191,7 +191,7 @@ export default function ContactPage() {
                                     Common Questions
                                 </span>
                                 <h2 className="heading-md text-navy-900 mb-6">
-                                    Frequently Asked Questions
+                                    School Admissions FAQ
                                 </h2>
                             </div>
                             <div className="space-y-4">
@@ -209,7 +209,7 @@ export default function ContactPage() {
                                 <GlassCard className="overflow-hidden">
                                     <div className="relative h-64">
                                         <iframe
-                                            src="https://www.google.com/maps?q=Mugal+Canal+Rd,+near+Ladla+Bakery+Chowk,+Old+Char+Chaman,+Dyal+Singh+Colony,+Karnal,+Haryana+132001&output=embed"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1500.0!2d77.0!3d29.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDQyJzAwLjAiTiA3N8KwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
                                             width="100%"
                                             height="100%"
                                             style={{ border: 0 }}
@@ -297,14 +297,14 @@ export default function ContactPage() {
                             Prefer a Direct Conversation?
                         </h2>
                         <p className="text-blue-100/80 text-lg mb-8">
-                            Call our front desk or send a WhatsApp message. We're available Mon-Sat, 9 AM to 7 PM.
+                            Call our admissions office or send a WhatsApp message. We're available Mon-Sat, 8 AM to 6 PM.
                             Response within 2 hours guaranteed!
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <a href="tel:+919653505005">
+                            <a href="tel:+919812026095">
                                 <Button className="btn-gold text-lg px-8 py-6 rounded-xl w-full sm:w-auto">
                                     <Phone className="mr-2 h-5 w-5" />
-                                    Call 096535 05005
+                                    Call 9812026095
                                 </Button>
                             </a>
                             <Button

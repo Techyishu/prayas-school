@@ -11,32 +11,32 @@ const triumphStories = [
         id: 1,
         image: "/2.png.webp",
         title: "Celebrating",
-        highlight: "100 UK Study",
-        subtitle: "Visas",
+        highlight: "100% Board",
+        subtitle: "Results",
         color: "from-amber-400 to-amber-500",
     },
     {
         id: 2,
         image: "/7-1.png.webp",
         title: "Celebrating",
-        highlight: "300 UK Study",
-        subtitle: "Visas",
+        highlight: "300+ Awards",
+        subtitle: "Won",
         color: "from-amber-400 to-amber-500",
     },
     {
         id: 3,
         image: "/9-2.png.webp",
         title: "Celebrating",
-        highlight: "Canada Study",
-        subtitle: "Visas",
+        highlight: "District",
+        subtitle: "Champions",
         color: "from-amber-400 to-amber-500",
     },
     {
         id: 4,
         image: "/1-3.png.webp",
         title: "Celebrating",
-        highlight: "70 Australia",
-        subtitle: "Study Visas",
+        highlight: "100+ Alumni",
+        subtitle: "Success",
         color: "from-amber-400 to-amber-500",
     },
 ]
@@ -114,11 +114,11 @@ export function TriumphsSection() {
                         className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-semibold uppercase tracking-wider mb-6"
                     >
                         <Sparkles className="w-4 h-4" />
-                        Success Stories
+                        School Achievements
                     </motion.div>
 
                     <h2 className="text-3xl md:text-5xl font-black text-white font-[family-name:var(--font-plus-jakarta)] tracking-tight">
-                        Stories of Educational <span className="text-amber-400">Triumphs</span>
+                        Celebrating <span className="text-amber-400">Excellence</span>
                     </h2>
                 </motion.div>
 
