@@ -14,7 +14,7 @@ export default function FacilitiesPage() {
     return (
         <div className="pt-24 pb-16">
             <section className="bg-gray-900 text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=2938&auto=format&fit=crop')] bg-cover bg-center" />
+                <div className="absolute inset-0 opacity-20 bg-[url('/school-2.jpeg')] bg-cover bg-center" />
                 <div className="container-custom relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">World-Class Facilities</h1>
                     <p className="text-gray-300 max-w-2xl mx-auto text-lg">
@@ -67,8 +67,12 @@ export default function FacilitiesPage() {
                         </div>
                         <div className="flex-1 h-80 bg-gray-200 rounded-3xl overflow-hidden relative">
                             {/* Placeholder for sports image */}
-                            <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-100">
-                                Sports Facility Image
+                            <div className="absolute inset-0">
+                                <img
+                                    src="/school-2.jpeg"
+                                    alt="Sports Facilities"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
                     </div>

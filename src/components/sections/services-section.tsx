@@ -35,7 +35,7 @@ const services = [
         flag: "🎯",
         stats: { successRate: "96%", avgTime: "3 years" },
         color: "from-blue-500 to-indigo-600",
-        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
+        image: "/hero/slide-2.png",
         gridClass: "services-card-2",
     },
     {

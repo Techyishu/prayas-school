@@ -12,7 +12,7 @@ export function Footer() {
     const currentYear = new Date().getFullYear()
 
     const handleWhatsApp = () => {
-        window.open("https://wa.me/919653505005?text=Hi, I'd like to know more about your services", "_blank")
+        window.open("https://wa.me/919812026095?text=Hi, I'd like to know more about your services", "_blank")
     }
 
     const footerLinks = {
@@ -39,7 +39,7 @@ export function Footer() {
     }
 
     const offices = [
-        { city: "Karnal (Head Office)", phone: "096535 05005" },
+        { city: "Karnal (Head Office)", phone: "9812026095" },
     ]
 
     const socialLinks = [
@@ -191,22 +191,6 @@ export function Footer() {
                     </div>
                 </div>
 
-                {/* Offices */}
-                <div className="mt-16 pt-8 border-t border-white/10">
-                    <h4 className="font-semibold text-lg mb-6 text-center">Our Office</h4>
-                    <div className="flex flex-wrap justify-center gap-6">
-                        {offices.map((office) => (
-                            <a
-                                key={office.city}
-                                href={`tel:${office.phone}`}
-                                className="px-4 py-2 bg-white/5 rounded-lg border border-white/10 hover:border-teal-500/50 hover:bg-white/10 transition-all text-center"
-                            >
-                                <div className="text-sm font-medium text-white">{office.city}</div>
-                                <div className="text-xs text-blue-200/60">{office.phone}</div>
-                            </a>
-                        ))}
-                    </div>
-                </div>
             </div>
 
             {/* Bottom Bar */}

@@ -6,7 +6,7 @@ import Image from "next/image"
 import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
-import { ArrowRight, ChevronLeft, ChevronRight, Sparkles, Plane, Quote } from "lucide-react"
+import { ArrowRight, ChevronLeft, ChevronRight, Sparkles, GraduationCap, Quote } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 // Success story data
@@ -14,66 +14,66 @@ const successStories = [
     {
         id: 1,
         name: "Rahul Sharma",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop",
-        from: "Delhi, India",
-        to: "Boston, USA",
-        visa: "F1 Student Visa",
-        flag: "🇺🇸",
-        days: 30,
-        quote: "From Delhi to Harvard Business School – Seabird made my impossible dream possible in just 30 days!",
-        stats: { university: "Harvard", scholarship: "$45K" },
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop",
+        from: "Class of 2023",
+        to: "IIT Delhi",
+        visa: "Engineering",
+        flag: "🎓",
+        days: 98,
+        quote: "Prayas School gave me the foundation I needed to crack JEE. The teachers were incredibly supportive!",
+        stats: { university: "IIT Delhi", rank: "Top 100" },
         gradient: "from-blue-600 to-indigo-600",
     },
     {
         id: 2,
-        name: "Patel Family",
-        image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&h=800&fit=crop",
-        from: "Gujarat, India",
-        to: "Toronto, Canada",
-        visa: "Canada PR",
-        flag: "🇨🇦",
-        days: 45,
-        quote: "Our family of 4 got Canada PR approved. Kids are thriving in Toronto schools!",
-        stats: { members: "4 Family", type: "Express Entry" },
+        name: "Priya Patel",
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop",
+        from: "Class of 2022",
+        to: "AIIMS Delhi",
+        visa: "Medical",
+        flag: "⚕️",
+        days: 99,
+        quote: "My dream of becoming a doctor started here. The science labs and faculty guidance were world-class.",
+        stats: { college: "AIIMS", field: "MBBS" },
         gradient: "from-red-600 to-rose-600",
     },
     {
         id: 3,
-        name: "Priya Menon",
-        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=800&fit=crop",
-        from: "Bangalore, India",
-        to: "Sydney, Australia",
-        visa: "482 Work Visa",
-        flag: "🇦🇺",
-        days: 35,
-        quote: "IT career boost! Working at Google Sydney now with my 482 visa. Thank you Seabird!",
-        stats: { company: "Google", salary: "AUD 180K" },
+        name: "Amit Singh",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop",
+        from: "Class of 2021",
+        to: "National Level",
+        visa: "Sports",
+        flag: "🏆",
+        days: 100,
+        quote: "The sports facilities at Prayas helped me reach the national level in cricket. Forever grateful!",
+        stats: { sport: "Cricket", level: "National" },
         gradient: "from-teal-600 to-emerald-600",
     },
     {
         id: 4,
-        name: "Anjali Singh",
-        image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=800&fit=crop",
-        from: "Mumbai, India",
-        to: "London, UK",
-        visa: "Health & Care Visa",
-        flag: "🇬🇧",
-        days: 28,
-        quote: "NHS accepted my nursing credentials. Living my London dream as a Senior Nurse!",
-        stats: { hospital: "NHS", position: "Senior Nurse" },
+        name: "Sneha Gupta",
+        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&h=800&fit=crop",
+        from: "Class of 2020",
+        to: "Civil Services",
+        visa: "Public Service",
+        flag: "🇮🇳",
+        days: 95,
+        quote: "The values and discipline instilled in me at Prayas School guided me to clear UPSC.",
+        stats: { exam: "UPSC", rank: "AIR 150" },
         gradient: "from-purple-600 to-violet-600",
     },
     {
         id: 5,
-        name: "Vikram Reddy",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=800&fit=crop",
-        from: "Hyderabad, India",
-        to: "Dubai, UAE",
-        visa: "Golden Visa",
-        flag: "🇦🇪",
-        days: 21,
-        quote: "10-year Golden Visa secured! Running my tech startup from Dubai's Silicon Oasis.",
-        stats: { duration: "10 Years", investment: "$2M" },
+        name: "Arjun Reddy",
+        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=800&fit=crop",
+        from: "Class of 2019",
+        to: "Entrepreneur",
+        visa: "Business",
+        flag: "💼",
+        days: 100,
+        quote: "Prayas encouraged my innovative thinking. Today I run a successful tech startup.",
+        stats: { industry: "Tech", role: "Founder" },
         gradient: "from-amber-600 to-orange-600",
     },
 ]
@@ -99,7 +99,7 @@ function FloatingBadge({ isActive }: { isActive: boolean }) {
                 {/* Badge */}
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/50 border border-cyan-300/50">
-                        <Plane className="w-6 h-6 text-white" />
+                        <GraduationCap className="w-6 h-6 text-white" />
                     </div>
                 </div>
                 {/* Orbiting ring */}
@@ -247,7 +247,7 @@ function SuccessCard({
                                     {story.days}
                                 </div>
                                 <div className="text-xs text-cyan-200/70 uppercase tracking-wider">
-                                    Days
+                                    Percent
                                 </div>
                             </div>
                             <div className="w-px h-10 bg-cyan-500/30" />
@@ -306,7 +306,7 @@ function SuccessCard({
                         className="mt-8 btn-gold rounded-xl py-6"
                         onClick={(e) => {
                             e.stopPropagation()
-                            window.open("https://wa.me/919653505005", "_blank")
+                            window.open("https://wa.me/919812026095", "_blank")
                         }}
                     >
                         Your Story Next?
@@ -445,7 +445,7 @@ export function SuccessSlider() {
                         Dreams That <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Took Flight</span>
                     </h2>
                     <p className="text-blue-100/60 max-w-2xl mx-auto">
-                        Join thousands of students and professionals who transformed their lives with our expert visa guidance.
+                        Join thousands of students who achieved their dreams with our quality education.
                     </p>
                 </motion.div>
 
@@ -515,7 +515,7 @@ export function SuccessSlider() {
                     <Button
                         size="lg"
                         className="btn-gold rounded-2xl px-10 py-7 text-lg group"
-                        onClick={() => window.open("https://wa.me/919653505005", "_blank")}
+                        onClick={() => window.open("https://wa.me/919812026095", "_blank")}
                     >
                         Start Your Journey
                         <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-2" />

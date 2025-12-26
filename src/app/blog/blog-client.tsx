@@ -8,7 +8,7 @@ import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
 
-const categories = ["All", "UK", "Canada", "Australia", "Success Stories"]
+const categories = ["All", "Academics", "Sports", "Events", "Achievements"]
 
 export default function BlogClient({ blogPosts }: { blogPosts: any[] }) {
     const [selectedCategory, setSelectedCategory] = useState("All")
@@ -41,13 +41,13 @@ export default function BlogClient({ blogPosts }: { blogPosts: any[] }) {
                         transition={{ duration: 0.6 }}
                     >
                         <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-teal-400 text-sm font-semibold uppercase tracking-wide mb-6">
-                            Visa Diaries & News
+                            School News & Updates
                         </span>
                         <h1 className="heading-xl text-white mb-6">
-                            Latest <span className="gradient-text-gold">Updates</span>
+                            Latest <span className="gradient-text-gold">Happenings</span>
                         </h1>
                         <p className="text-xl text-blue-100/80 max-w-2xl mx-auto">
-                            Stay informed with the latest visa rules, success stories, and expert insights from Seabird Education.
+                            Stay informed with the latest school events, student achievements, and academic updates from Prayas School.
                         </p>
                     </motion.div>
                 </div>
@@ -124,8 +124,8 @@ export default function BlogClient({ blogPosts }: { blogPosts: any[] }) {
                                     key={category}
                                     onClick={() => setSelectedCategory(category)}
                                     className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === category
-                                            ? "bg-teal-500 text-white"
-                                            : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                                        ? "bg-teal-500 text-white"
+                                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                         }`}
                                 >
                                     {category}
@@ -229,10 +229,10 @@ export default function BlogClient({ blogPosts }: { blogPosts: any[] }) {
                             Stay Updated
                         </span>
                         <h2 className="heading-lg text-navy-900 mb-4">
-                            Subscribe to Visa Updates
+                            Subscribe to School Updates
                         </h2>
                         <p className="text-gray-600 mb-8">
-                            Get the latest visa news, scholarship updates, and success stories directly in your inbox.
+                            Get the latest school news, academic updates, and success stories directly in your inbox.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                             <input

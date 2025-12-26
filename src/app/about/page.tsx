@@ -135,9 +135,9 @@ export default function AboutPage() {
                         >
                             <div className="absolute -inset-4 bg-gradient-to-br from-teal-500/20 to-gold-500/20 rounded-3xl blur-2xl" />
                             <img
-                                src="/office-building.jpg"
+                                src="/school-1.jpeg"
                                 alt="Prayas School Campus"
-                                className="relative rounded-2xl shadow-2xl w-full object-contain aspect-[4/3] bg-gray-100"
+                                className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3] bg-gray-100"
                             />
                         </motion.div>
 

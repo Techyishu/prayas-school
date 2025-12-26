@@ -138,10 +138,10 @@ export function CtaSection() {
                             className="btn-gold text-lg px-8 py-7 rounded-xl group"
                         >
                             <MessageCircle className="mr-2 h-5 w-5" />
-                            WhatsApp: 096535 05005
+                            WhatsApp: 9812026095
                             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                         </Button>
-                        <a href="tel:+919653505005">
+                        <a href="tel:+919812026095">
                             <Button
                                 variant="outline"
                                 className="btn-glass text-lg px-8 py-7 rounded-xl group"

@@ -15,7 +15,7 @@ export function Hero() {
     const opacity = useTransform(scrollY, [0, 300], [1, 0])
 
     const handleWhatsApp = () => {
-        window.open("https://wa.me/919653505005?text=Hi, I'd like to book a free consultation for study abroad", "_blank")
+        window.open("https://wa.me/919812026095?text=Hi, I'd like to book a free consultation for school admission", "_blank")
     }
 
     return (
@@ -46,7 +46,7 @@ export function Hero() {
                         >
                             <Sparkles className="h-4 w-4 text-gold-400" />
                             <span className="text-sm text-blue-100 font-medium">
-                                Trusted by 10,000+ Students Since 2007
+                                Trusted by 1000+ Students Since 2000
                             </span>
                         </motion.div>
 
@@ -58,8 +58,8 @@ export function Hero() {
                             className="heading-xl text-white leading-tight"
                         >
                             Unlock Your{" "}
-                            <span className="gradient-text-gold">Global Education</span>{" "}
-                            Dreams
+                            <span className="gradient-text-gold">Educational</span>{" "}
+                            Journey
                         </motion.h1>
 
                         {/* Subtitle */}
@@ -69,8 +69,8 @@ export function Hero() {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="text-xl text-blue-100/80 max-w-xl leading-relaxed"
                         >
-                            Expert guidance from QUEAC, British Council & Canada certified professionals.
-                            Study in UK, Canada, Australia & more with 18 years of proven success.
+                            Expert guidance from experienced faculty.
+                            Holistic development focus with 24+ years of proven success.
                         </motion.p>
 
                         {/* Stats Row */}
@@ -81,9 +81,9 @@ export function Hero() {
                             className="flex flex-wrap gap-6"
                         >
                             {[
-                                { value: "18+", label: "Years Experience" },
-                                { value: "18,000+", label: "Visas Processed" },
-                                { value: "100%", label: "Success Rate" },
+                                { value: "24+", label: "Years Excellence" },
+                                { value: "1000+", label: "Students" },
+                                { value: "100%", label: "Education Quality" },
                             ].map((stat, i) => (
                                 <div key={i} className="text-center pr-6 border-r border-white/20 last:border-r-0 last:pr-0">
                                     <div className="text-2xl md:text-3xl font-bold text-white">{stat.value}</div>
@@ -105,7 +105,7 @@ export function Hero() {
                                 className="btn-gold text-lg px-8 py-7 rounded-xl group"
                             >
                                 <Phone className="mr-2 h-5 w-5 group-hover:animate-pulse" />
-                                Book Free Consultation
+                                Book School Visit
                                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                             </Button>
 
@@ -115,7 +115,7 @@ export function Hero() {
                                 className="btn-glass text-lg px-8 py-7 rounded-xl group"
                             >
                                 <GraduationCap className="mr-2 h-5 w-5" />
-                                Explore Study Destinations
+                                Explore Facilities
                             </Button>
                         </motion.div>
                     </div>
@@ -134,8 +134,8 @@ export function Hero() {
                                         <GraduationCap className="h-6 w-6 text-white" />
                                     </div>
                                     <div>
-                                        <div className="text-2xl font-bold text-white">18,000+</div>
-                                        <div className="text-sm text-blue-200/70">Visas Processed</div>
+                                        <div className="text-2xl font-bold text-white">1000+</div>
+                                        <div className="text-sm text-blue-200/70">Students Enrolled</div>
                                     </div>
                                 </div>
                             </motion.div>
@@ -153,8 +153,8 @@ export function Hero() {
                                         <Globe className="h-6 w-6 text-white" />
                                     </div>
                                     <div>
-                                        <div className="text-2xl font-bold text-white">5+</div>
-                                        <div className="text-sm text-blue-200/70">Countries Served</div>
+                                        <div className="text-2xl font-bold text-white">2</div>
+                                        <div className="text-sm text-blue-200/70">Modern Campuses</div>
                                     </div>
                                 </div>
                             </motion.div>
@@ -172,8 +172,8 @@ export function Hero() {
                                         <Users className="h-6 w-6 text-white" />
                                     </div>
                                     <div>
-                                        <div className="text-2xl font-bold text-white">70+</div>
-                                        <div className="text-sm text-blue-200/70">Expert Team</div>
+                                        <div className="text-2xl font-bold text-white">50+</div>
+                                        <div className="text-sm text-blue-200/70">Expert Teachers</div>
                                     </div>
                                 </div>
                             </motion.div>
