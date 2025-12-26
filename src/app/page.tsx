@@ -1,4 +1,3 @@
-// import { Hero3D } from "@/components/sections/hero-3d";
 import { HeroSlider } from "@/components/sections/hero-slider";
 // import { SuccessSlider } from "@/components/sections/success-slider";
 import { ServicesSection } from "@/components/sections/services-section";
