@@ -69,10 +69,10 @@ export const metadata: Metadata = {
         addressLocality: "Kunjpura",
         addressRegion: "Haryana",
         addressCountry: "IN",
-        streetAddress: "Opposite Batra Filling Station, Karnal Kunjpura Road"
+        streetAddress: "Opposite Batra Filling Station, Karnal Road, Kunjpura"
       },
       telephone: "+91-9812026095",
-      email: "info@prayasschool.com",
+      email: "prayasskool@gmail.com",
       sameAs: [
         "https://www.facebook.com/prayasschool",
         "https://www.instagram.com/prayasschool",

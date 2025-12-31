@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Phone, Globe, ChevronDown } from "lucide-react"
+import { Menu, X, Phone, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
 import { cn } from "@/lib/utils"
@@ -28,11 +28,12 @@ export function Navbar() {
     const navLinks = [
         { href: "/", label: t("home") },
         { href: "/about", label: t("about") },
-        { href: "/academics", label: "Academics" },
+        { href: "/toppers", label: "Toppers" },
         { href: "/admissions", label: "Admissions" },
         { href: "/faculty", label: "Faculty" },
         { href: "/facilities", label: "Facilities" },
         { href: "/gallery", label: "Gallery" },
+        { href: "/slc", label: "SLC" },
         { href: "/contact", label: t("contact") },
     ]
 
@@ -100,15 +101,6 @@ export function Navbar() {
 
                         {/* Right Side */}
                         <div className="hidden lg:flex items-center gap-4">
-                            {/* Language Toggle */}
-                            <button
-                                onClick={() => setLanguage(language === "en" ? "hi" : "en")}
-                                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors text-gray-600 hover:bg-gray-100"
-                            >
-                                <Globe className="h-4 w-4" />
-                                {language === "en" ? "हिंदी" : "EN"}
-                            </button>
-
                             {/* CTA Button */}
                             <Button
                                 onClick={handleWhatsApp}

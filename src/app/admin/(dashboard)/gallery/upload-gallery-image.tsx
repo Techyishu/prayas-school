@@ -27,14 +27,14 @@ export default function UploadGalleryImage() {
 
         try {
             setUploading(true);
-            
+
             // Upload to Supabase Storage
             const fileExt = file.name.split('.').pop();
             const fileName = `${Date.now()}-${Math.random().toString(36).substring(7)}.${fileExt}`;
-            const filePath = `gallery/${fileName}`;
+            const filePath = `${fileName}`; // Removed 'gallery/' prefix as we are putting it in gallery bucket
 
             const { error: uploadError } = await supabase.storage
-                .from('uploads')
+                .from('gallery') // Changed from 'uploads' to 'gallery'
                 .upload(filePath, file);
 
             if (uploadError) {
@@ -43,7 +43,7 @@ export default function UploadGalleryImage() {
 
             // Get public URL
             const { data: { publicUrl } } = supabase.storage
-                .from('uploads')
+                .from('gallery')
                 .getPublicUrl(filePath);
 
             // Save to database

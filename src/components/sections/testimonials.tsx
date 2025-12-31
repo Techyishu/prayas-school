@@ -6,6 +6,7 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react"
 import { GlassCard } from "@/components/ui/glass-card"
 import { useLanguage } from "@/lib/language-context"
 import { useState, useEffect, useCallback, useMemo } from "react"
+import { SectionHeading } from "@/components/ui/section-heading"
 
 const testimonials = [
     {
@@ -100,24 +101,16 @@ export function Testimonials() {
             <div className="absolute top-1/2 left-0 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl -translate-y-1/2" />
             <div className="absolute top-1/2 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl -translate-y-1/2" />
 
+
             <div className="container-custom relative z-10">
                 {/* Section Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 text-teal-600 text-sm font-semibold uppercase tracking-wide mb-4">
-                        Student Success Stories
-                    </span>
-                    <h2 className="heading-lg text-navy-900 mb-4">
-                        Hear What Our Students Say!
-                    </h2>
-                    <p className="text-gray-600 max-w-xl mx-auto">
-                        Real experiences from parents, students, and alumni of Prayas School.
-                    </p>
-                </motion.div>
+                <SectionHeading
+                    pill="Student Success Stories"
+                    title="Hear What Our Students"
+                    highlight="Say!"
+                    description="Real experiences from parents, students, and alumni of Prayas School."
+                    light={false}
+                />
 
                 {/* Testimonials Carousel */}
                 <div

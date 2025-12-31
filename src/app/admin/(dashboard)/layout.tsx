@@ -24,10 +24,12 @@ export default function AdminLayout({
 
                 <nav className="space-y-2">
                     <AdminLink href="/admin" icon="LayoutDashboard" label="Dashboard" />
-                    <AdminLink href="/admin/visa" icon="FileCheck" label="Visa" />
-                    <AdminLink href="/admin/gallery" icon="Image" label="Gallery" />
-                    <AdminLink href="/admin/blog" icon="FileText" label="Blog" />
                     <AdminLink href="/admin/contacts" icon="MessageSquare" label="Messages" />
+                    <AdminLink href="/admin/admissions" icon="GraduationCap" label="Admissions" />
+                    <AdminLink href="/admin/toppers" icon="Trophy" label="Toppers" />
+                    <AdminLink href="/admin/faculty" icon="Users" label="Faculty" />
+                    <AdminLink href="/admin/slc" icon="FileCheck" label="SLC" />
+                    <AdminLink href="/admin/gallery" icon="Image" label="Gallery" />
                 </nav>
 
                 <div className="absolute bottom-6 left-6 right-6">
@@ -55,14 +57,18 @@ export default function AdminLayout({
     );
 }
 
-import { LayoutDashboard, FileText, MessageSquare, FileCheck, Image } from 'lucide-react';
+import { LayoutDashboard, FileText, MessageSquare, FileCheck, Image, GraduationCap, Trophy, Users, Briefcase } from 'lucide-react';
 
 const icons = {
     LayoutDashboard,
     FileText,
     MessageSquare,
     FileCheck,
-    Image
+    Image,
+    GraduationCap,
+    Trophy,
+    Users,
+    Briefcase,
 };
 
 function AdminLink({ href, icon, label }: { href: string; icon: keyof typeof icons; label: string }) {

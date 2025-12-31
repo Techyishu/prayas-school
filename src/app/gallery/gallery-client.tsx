@@ -12,8 +12,8 @@ export default function GalleryClient({ galleryImages }: { galleryImages: any[] 
     const [selectedCategory, setSelectedCategory] = useState("All")
     const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
-    const filteredImages = selectedCategory === "All" 
-        ? galleryImages 
+    const filteredImages = selectedCategory === "All"
+        ? galleryImages
         : galleryImages.filter(img => img.category === selectedCategory)
 
     const selectedImageData = selectedImage !== null ? galleryImages.find(img => img.id === selectedImage) : null
@@ -73,11 +73,10 @@ export default function GalleryClient({ galleryImages }: { galleryImages: any[] 
                             <motion.button
                                 key={category}
                                 onClick={() => setSelectedCategory(category)}
-                                className={`px-6 py-3 rounded-xl font-semibold transition-all ${
-                                    selectedCategory === category
+                                className={`px-6 py-3 rounded-xl font-semibold transition-all ${selectedCategory === category
                                         ? "bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-lg shadow-teal-500/20"
                                         : "bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
-                                }`}
+                                    }`}
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
@@ -194,42 +193,9 @@ export default function GalleryClient({ galleryImages }: { galleryImages: any[] 
                 </motion.div>
             )}
 
-            {/* Stats Section */}
-            <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
-                <div className="container-custom">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-center mb-12"
-                    >
-                        <h2 className="heading-lg text-navy-900 mb-4">Our Achievements in Numbers</h2>
-                    </motion.div>
-
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        {[
-                            { value: "18,000+", label: "Visas Processed" },
-                            { value: "100%", label: "Success Rate" },
-                            { value: "18+", label: "Years Experience" },
-                            { value: "70+", label: "Team Members" },
-                        ].map((stat, index) => (
-                            <motion.div
-                                key={stat.label}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.1 }}
-                            >
-                                <GlassCard glow="teal" className="p-6 text-center">
-                                    <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
-                                    <div className="text-sm font-semibold text-navy-900">{stat.label}</div>
-                                </GlassCard>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            {/* End of Gallery */}
         </div>
     )
 }
+
 

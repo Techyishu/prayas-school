@@ -5,12 +5,13 @@ import { GlassCard, GlassCardContent } from "@/components/ui/glass-card"
 import { ContactForm } from "@/components/sections/contact-form"
 import { MapPin, Phone, Mail, Clock, MessageCircle, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { PageHeader } from "@/components/ui/page-header"
 
 const contactInfo = [
     {
         icon: MapPin,
         title: "Main Campus",
-        lines: ["Opposite Batra Filling Station,", "Karnal Kunjpura Road, Kunjpura"],
+        lines: ["Opposite Batra Filling Station,", "Karnal Road, Kunjpura"],
         gradient: "from-teal-500 to-emerald-600",
     },
     {
@@ -22,7 +23,7 @@ const contactInfo = [
     {
         icon: Mail,
         title: "Email",
-        lines: ["info@prayasschool.com", "admissions@prayasschool.com"],
+        lines: ["prayasskool@gmail.com", "prayasskool@gmail.com"],
         gradient: "from-purple-500 to-pink-600",
     },
     {
@@ -36,9 +37,9 @@ const contactInfo = [
 const offices = [
     {
         city: "Main Campus",
-        address: "Opposite Batra Filling Station, Karnal Kunjpura Road, Kunjpura",
+        address: "Opposite Batra Filling Station, Karnal Road, Kunjpura",
         phone: "9812026095",
-        email: "info@prayasschool.com"
+        email: "prayasskool@gmail.com"
     },
 ]
 
@@ -69,33 +70,13 @@ export default function ContactPage() {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <section className="relative py-32 overflow-hidden">
-                <div className="absolute inset-0 bg-navy-gradient" />
-                <div className="absolute inset-0 grid-pattern opacity-30" />
-
-                {/* Floating orbs */}
-                <div className="absolute top-20 left-10 w-64 h-64 bg-teal-500/20 rounded-full blur-3xl" />
-                <div className="absolute bottom-20 right-10 w-80 h-80 bg-gold-500/15 rounded-full blur-3xl" />
-
-                <div className="container-custom relative z-10 text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-teal-400 text-sm font-semibold uppercase tracking-wide mb-6">
-                            We're Here for You
-                        </span>
-                        <h1 className="heading-xl text-white mb-6">
-                            Get in <span className="gradient-text-gold">Touch</span>
-                        </h1>
-                        <p className="text-xl text-blue-100/80 max-w-2xl mx-auto">
-                            Have questions about Prayas School? Our admissions team is here to help.
-                            Schedule a school visit today!
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
+            <PageHeader
+                badge="We're Here for You"
+                badgeIcon={MessageCircle}
+                title="Get in"
+                highlight="Touch"
+                description="Have questions about Prayas School? Our admissions team is here to help. Schedule a school visit today!"
+            />
 
             {/* Contact Cards */}
             <section className="py-16 -mt-16 relative z-20">

@@ -51,7 +51,7 @@ const certifications = [
 ]
 
 const offices = [
-    { city: "Main Campus", address: "Opposite Batra Filling Station, Karnal Kunjpura Road, Kunjpura", phone: "9812026095" },
+    { city: "Main Campus", address: "Opposite Batra Filling Station, Karnal Road, Kunjpura", phone: "9812026095" },
 ]
 
 const milestones = [

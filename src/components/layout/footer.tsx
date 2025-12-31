@@ -105,17 +105,17 @@ export function Footer() {
                         <div className="space-y-4 pt-4">
                             <div className="flex items-start gap-3 text-blue-100/80">
                                 <MapPin className="h-5 w-5 text-teal-400 shrink-0 mt-1" />
-                                <span>Opposite Batra Filling Station,<br />Karnal Kunjpura Road, Kunjpura</span>
+                                <span>Opposite Batra Filling Station,<br />Karnal Road, Kunjpura</span>
                             </div>
                             <div className="flex items-center gap-3 text-blue-100/80">
                                 <Phone className="h-5 w-5 text-teal-400 shrink-0" />
                                 <span>+91 9812026095, +91 9050002491</span>
                             </div>
-                            <a href="mailto:info@prayasschool.com" className="flex items-center gap-3 text-blue-200/80 hover:text-teal-400 transition-colors">
+                            <a href="mailto:prayasskool@gmail.com" className="flex items-center gap-3 text-blue-200/80 hover:text-teal-400 transition-colors">
                                 <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
                                     <Mail className="h-4 w-4" />
                                 </div>
-                                <span>info@prayasschool.com</span>
+                                <span>prayasskool@gmail.com</span>
                             </a>
                         </div>
 

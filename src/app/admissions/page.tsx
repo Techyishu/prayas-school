@@ -1,21 +1,58 @@
 
 "use client";
 
-import { FileText, Calendar, CreditCard, CheckCircle } from "lucide-react";
+import { useState } from "react";
+import { FileText, Calendar, CreditCard, CheckCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PageHeader } from "@/components/ui/page-header";
 
 export default function AdmissionsPage() {
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setLoading(true);
+
+        const formData = new FormData(e.currentTarget);
+        const data = {
+            parent_name: formData.get('parent_name') as string,
+            phone: formData.get('phone') as string,
+            email: formData.get('email') as string,
+            student_name: formData.get('student_name') as string,
+            grade: formData.get('grade') as string,
+            message: formData.get('message') as string,
+        };
+
+        try {
+            const response = await fetch('/api/admissions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) throw new Error('Failed to submit');
+
+            setSuccess(true);
+            (e.target as HTMLFormElement).reset();
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Failed to submit form. Please try again.');
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
-        <div className="pt-24 pb-16">
+        <div className="bg-white">
             {/* Hero */}
-            <section className="bg-teal-900 py-20 text-white">
-                <div className="container-custom text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Join Our Family</h1>
-                    <p className="text-xl text-teal-100 max-w-2xl mx-auto">
-                        Admission process for the academic year 2025-26 is now open.
-                    </p>
-                </div>
-            </section>
+            <PageHeader
+                badge="Admissions Open"
+                badgeIcon={FileText}
+                title="Join Our"
+                highlight="Family"
+                description="Admission process for the academic year 2025-26 is now open."
+            />
 
             {/* Admission Process Steps */}
             <section className="py-20">
@@ -92,30 +129,66 @@ export default function AdmissionsPage() {
                 <div className="container-custom max-w-2xl">
                     <div className="bg-navy-950 text-white p-8 rounded-3xl shadow-xl">
                         <h2 className="text-3xl font-bold mb-6 text-center">Admission Inquiry</h2>
-                        <form className="space-y-4">
+
+                        {success && (
+                            <div className="mb-6 p-4 bg-teal-500/20 border border-teal-500/50 rounded-xl text-center">
+                                <CheckCircle className="h-8 w-8 text-teal-400 mx-auto mb-2" />
+                                <p className="font-semibold">Thank you for your inquiry!</p>
+                                <p className="text-sm text-gray-300 mt-1">Our admissions team will contact you soon.</p>
+                            </div>
+                        )}
+
+                        <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block text-sm font-medium mb-1">Parent's Name</label>
-                                    <input type="text" className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500" placeholder="Your Name" />
+                                    <input
+                                        type="text"
+                                        name="parent_name"
+                                        required
+                                        className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500"
+                                        placeholder="Your Name"
+                                    />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium mb-1">Phone Number</label>
-                                    <input type="tel" className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500" placeholder="Mobile Number" />
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        required
+                                        className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500"
+                                        placeholder="Mobile Number"
+                                    />
                                 </div>
                             </div>
                             <div>
                                 <label className="block text-sm font-medium mb-1">Email Address</label>
-                                <input type="email" className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500" placeholder="email@example.com" />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500"
+                                    placeholder="email@example.com"
+                                />
                             </div>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block text-sm font-medium mb-1">Student's Name</label>
-                                    <input type="text" className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500" placeholder="Child's Name" />
+                                    <input
+                                        type="text"
+                                        name="student_name"
+                                        required
+                                        className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500"
+                                        placeholder="Child's Name"
+                                    />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium mb-1">Grade Applying For</label>
-                                    <select className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500 [&>option]:text-black">
-                                        <option>Select Grade</option>
+                                    <select
+                                        name="grade"
+                                        required
+                                        className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500 [&>option]:text-black"
+                                    >
+                                        <option value="">Select Grade</option>
                                         <option>Pre-Nursery</option>
                                         <option>Nursery</option>
                                         <option>KG</option>
@@ -127,9 +200,27 @@ export default function AdmissionsPage() {
                             </div>
                             <div>
                                 <label className="block text-sm font-medium mb-1">Message</label>
-                                <textarea rows={3} className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500" placeholder="Any specific requirements or questions?"></textarea>
+                                <textarea
+                                    rows={3}
+                                    name="message"
+                                    className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-gold-500"
+                                    placeholder="Any specific requirements or questions?"
+                                ></textarea>
                             </div>
-                            <Button className="w-full btn-gold py-6 text-lg font-bold mt-4">Submit Inquiry</Button>
+                            <Button
+                                type="submit"
+                                disabled={loading}
+                                className="w-full btn-gold py-6 text-lg font-bold mt-4"
+                            >
+                                {loading ? (
+                                    <>
+                                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                                        Submitting...
+                                    </>
+                                ) : (
+                                    'Submit Inquiry'
+                                )}
+                            </Button>
                         </form>
                     </div>
                 </div>

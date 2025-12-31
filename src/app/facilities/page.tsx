@@ -1,5 +1,7 @@
+"use client"
 
 import { Computer, Beaker, Library, Bus, Utensils, HeartPulse } from "lucide-react";
+import { PageHeader } from "@/components/ui/page-header";
 
 export default function FacilitiesPage() {
     const facilities = [
@@ -12,16 +14,14 @@ export default function FacilitiesPage() {
     ];
 
     return (
-        <div className="pt-24 pb-16">
-            <section className="bg-gray-900 text-white py-20 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[url('/school-2.jpeg')] bg-cover bg-center" />
-                <div className="container-custom relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">World-Class Facilities</h1>
-                    <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-                        Creating an environment where students can thrive, learn, and grow safely.
-                    </p>
-                </div>
-            </section>
+        <div className="bg-white">
+            <PageHeader
+                badge="Infrastructure"
+                badgeIcon={Computer}
+                title="World-Class"
+                highlight="Facilities"
+                description="Creating an environment where students can thrive, learn, and grow safely."
+            />
 
             <section className="py-20 bg-white">
                 <div className="container-custom">

@@ -10,6 +10,7 @@ import {
     Phone
 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import { SectionHeading } from "@/components/ui/section-heading"
 
 // Services data
 const services = [
@@ -231,43 +232,14 @@ export function ServicesSection() {
             {/* Content */}
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.6 }}
-                    className="max-w-4xl mx-auto text-center mb-16"
-                >
-                    <motion.div
-                        initial={{ scale: 0.9, opacity: 0 }}
-                        animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                        className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-semibold uppercase tracking-wider mb-6"
-                    >
-                        <Sparkles className="w-4 h-4" />
-                        Our Services
-                    </motion.div>
+                <SectionHeading
+                    pill="Our Services"
+                    title="Comprehensive Educational"
+                    highlight="Programs"
+                    description="From primary to high school – quality education with holistic development"
+                />
 
-                    <h2 className="text-3xl md:text-5xl font-black text-white mb-4 font-[family-name:var(--font-plus-jakarta)] tracking-tight">
-                        Comprehensive Educational <span className="text-cyan-400">Programs</span>
-                    </h2>
 
-                    <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto">
-                        From primary to high school – quality education with holistic development
-                    </p>
-
-                    {/* Stats Row */}
-                    <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-                        {[
-                            { value: "1000+", label: "Students Enrolled" },
-                            { value: "95%", label: "Success Rate" },
-                            { value: "50+", label: "Expert Teachers" },
-                        ].map((stat, i) => (
-                            <div key={i} className="text-center">
-                                <div className="text-2xl md:text-3xl font-bold text-white">{stat.value}</div>
-                                <div className="text-sm text-white/50">{stat.label}</div>
-                            </div>
-                        ))}
-                    </div>
-                </motion.div>
 
                 {/* Services Z-Grid */}
                 <div className="services-zigzag max-w-6xl mx-auto">

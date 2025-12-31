@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 
 export default function AdminLogin() {
     const router = useRouter();
-    // const supabase = createClient();
+    const supabase = createClient();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
@@ -18,21 +18,19 @@ export default function AdminLogin() {
         setLoading(true);
         setError(null);
 
-        // const { error } = await supabase.auth.signInWithPassword({
-        //     email,
-        //     password,
-        // });
+        const { error } = await supabase.auth.signInWithPassword({
+            email,
+            password,
+        });
 
-        // if (error) {
-        //     setError(error.message);
-        // } else {
-        //     router.push('/admin');
-        //     router.refresh();
-        // }
-        // For development/debugging purposes until Supabase is configured
-        console.log('Login attempt with:', email, password);
-        router.push('/admin'); // Force redirect for now
-        setLoading(false);
+        if (error) {
+            setError(error.message);
+            setLoading(false);
+        } else {
+            router.push('/admin');
+            router.refresh();
+            setLoading(false);
+        }
     }
 
     return (

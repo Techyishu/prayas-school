@@ -19,7 +19,14 @@ export function HeroSlider() {
                     loop
                     muted
                     playsInline
+                    preload="auto"
                     className="object-cover w-full h-full"
+                    onLoadedMetadata={(e) => {
+                        const video = e.currentTarget;
+                        video.play().catch(() => {
+                            // Autoplay was prevented, but video will play on user interaction
+                        });
+                    }}
                 >
                     <source src="/hero-video-2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -30,7 +37,7 @@ export function HeroSlider() {
 
             {/* Content Container */}
             <div className="relative z-10 w-full h-full flex items-center justify-center">
-                <div className="container mx-auto px-6 md:px-12 text-center text-white">
+                <div className="container mx-auto px-6 md:px-12 text-center text-white pt-24 md:pt-0">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -40,7 +47,7 @@ export function HeroSlider() {
 
 
                         {/* Title */}
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+                        <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-tight">
                             Nurturing Young Minds <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-300">
                                 Building Future Leaders

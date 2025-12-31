@@ -15,16 +15,35 @@ export function ContactForm() {
     const [loading, setLoading] = useState(false)
     const [success, setSuccess] = useState(false)
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setLoading(true)
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500))
+        const formData = new FormData(e.currentTarget)
+        const data = {
+            name: formData.get('name') as string,
+            email: formData.get('email') as string,
+            phone: formData.get('phone') as string,
+            visa_type: formData.get('visa-type') as string,
+            message: formData.get('message') as string,
+        }
 
-        console.log("Form Submitted")
-        setLoading(false)
-        setSuccess(true)
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            })
+
+            if (!response.ok) throw new Error('Failed to submit')
+
+            setSuccess(true)
+        } catch (error) {
+            console.error('Error submitting form:', error)
+            alert('Failed to submit form. Please try again.')
+        } finally {
+            setLoading(false)
+        }
     }
 
     if (success) {
@@ -70,6 +89,7 @@ export function ContactForm() {
                     </Label>
                     <Input
                         id="name"
+                        name="name"
                         required
                         placeholder="John Doe"
                         className="h-12 rounded-xl border-gray-200 focus:border-teal-500 focus:ring-teal-500/20"
@@ -85,6 +105,7 @@ export function ContactForm() {
                         </Label>
                         <Input
                             id="email"
+                            name="email"
                             type="email"
                             required
                             placeholder="john@example.com"
@@ -98,6 +119,7 @@ export function ContactForm() {
                         </Label>
                         <Input
                             id="phone"
+                            name="phone"
                             type="tel"
                             placeholder="+91 98765 43210"
                             className="h-12 rounded-xl border-gray-200 focus:border-teal-500 focus:ring-teal-500/20"
@@ -113,6 +135,7 @@ export function ContactForm() {
                     <div className="relative">
                         <select
                             id="visa-type"
+                            name="visa-type"
                             className="w-full h-12 rounded-xl border border-gray-200 bg-white px-4 pr-10 text-sm text-gray-900 appearance-none focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500"
                         >
                             <option value="">{t("selectVisaType")}</option>
@@ -135,6 +158,7 @@ export function ContactForm() {
                     </Label>
                     <Textarea
                         id="message"
+                        name="message"
                         rows={5}
                         placeholder="Tell us about your requirements..."
                         className="rounded-xl border-gray-200 focus:border-teal-500 focus:ring-teal-500/20 resize-none"
